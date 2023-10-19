@@ -17,7 +17,7 @@ export default function Home() {
             <Text
               as="h1"
               variant="h1"
-              className="text-3xl md:text-6xl my-2 md:my-4 mb:my-5 font-extralight"
+              className="text-3xl md:text-6xl my-2 font-extralight"
             >
               <span className="font-bold text-blue">Emmanuel</span> Essien
             </Text>
