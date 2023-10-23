@@ -19,7 +19,7 @@ export default function Home() {
                   width={500}
                   height={500}
                   alt="My photo"
-                  className=" object-cover w-full h-full rounded-[8px]"
+                  className=" object-cover w-full h-full rounded-[8px] pointer-events-none"
                 />
               </div>
             </div>
