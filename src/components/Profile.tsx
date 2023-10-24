@@ -1,4 +1,4 @@
-import { Text, Link } from "@/tw-components";
+import { Text, Link } from "@/reusable-components";
 import React from "react";
 
 function Profile() {
@@ -11,7 +11,7 @@ function Profile() {
         front-end.
       </li>
       <li className="leading-7">
-        Building side projects 👨🏽‍💻, you can find it in{" "}
+        I build side projects 👨🏽‍💻, you can find it in{" "}
         <Link
           href="https://github.com/ehma90"
           target="_blank"
@@ -38,7 +38,7 @@ function Profile() {
         🕊️, where I share tweets about things I like and memes.
       </li>
       <li>
-        Feel free to send an {" "}
+        Feel free to send an{" "}
         <Link
           href="mailto:ehmaessien@gmail.com"
           target="_blank"

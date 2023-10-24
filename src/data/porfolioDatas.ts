@@ -87,7 +87,7 @@ const myDatas = [
     header: "No Impunity",
     text: "No Impunity unlock the potential of litigation funding to support victims of corporate human rights abuse and environmental damage in their fight for justice. In achieving this, I was contracted to built this website/web app, using trending programming language like Typescript, NextJS as framework, and Firebase for authentication. This project has expand and widen my understanding of Typescript.",
     deploy: "https://www.noimpunity.org/",
-    stack: ["Next.ts", "TailwindCSS", "Typescript", "Firebase", ],
+    stack: ["Next.ts", "TailwindCSS", "Typescript", "Firebase", "Stripe" ],
   },
 ];
 
