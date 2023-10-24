@@ -9,7 +9,7 @@ const projects = () => {
   return (
     <>
       <Layout title="My projects">
-        <div className="mt-12 md:mt-32 px-4 md:px-0">
+        <div className="mt-12 md:mt-32 px-4 md:px-0 w-full">
           <Title width="w-[85px] md:w-[200px]" />
           <div className="mt-7 md:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9">
             {myData

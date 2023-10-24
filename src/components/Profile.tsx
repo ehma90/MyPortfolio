@@ -3,7 +3,7 @@ import React from "react";
 
 function Profile() {
   return (
-    <ul className=" px-3 text-md md:text-lg w-full md:max-w-2xl">
+    <ul className=" px-3 text-md md:text-lg w-full md:max-w-xl">
       <li className="leading-7">
         Hi 👋🏽, I&apos;m{" "}
         <span className="text-green-900 font-semibold ">Emmanuel,</span> a
