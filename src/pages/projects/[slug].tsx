@@ -67,7 +67,7 @@ const ProjectDetails = () => {
             <Text
               as="p"
               variant="p"
-              className="mx-auto md:px-[200px] text-center"
+              className="mx-auto md:px-[200px] font-light text-center"
             >
               {data?.text}
             </Text>
