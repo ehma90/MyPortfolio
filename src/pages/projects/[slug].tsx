@@ -21,7 +21,7 @@ const ProjectDetails = () => {
   } else {
     return (
       <Layout title={`${data?.header} project details` || `Project details`}>
-        <div className="  mx-auto px-5 md:px-0">
+        <Container className="  mx-auto px-5 md:px-0">
           <motion.div animate={{ x: 0 }} initial={{ x: 150 }} className="hidden md:block">
             <Button
               size="sm"
@@ -43,7 +43,7 @@ const ProjectDetails = () => {
             >
               {data?.header}
             </Text>
-            <div className="project-img mx-auto w-full max-w-3xl mt-5 ">
+            <div className=" w-full max-w-3xl mt-5 ">
               <Image
                 src={data?.image}
                 width={300}
@@ -53,7 +53,7 @@ const ProjectDetails = () => {
               />
             </div>
 
-            <ul className="py-[16px] md:py-[48px] flex justify-start gap-x-[8px] opacity-50">
+            <ul className="py-[16px] md:py-[48px] flex justify-center flex-wrap gap-4 opacity-50">
               {data?.stack.map((item: any) => (
                 <li
                   key={item.id}
@@ -103,7 +103,7 @@ const ProjectDetails = () => {
               </Button>
             </div>
           </div>
-        </div>
+        </Container>
       </Layout>
     );
   }
