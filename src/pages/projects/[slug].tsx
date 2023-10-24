@@ -69,7 +69,7 @@ const ProjectDetails = () => {
               variant="p"
               className="mx-auto md:px-[200px] font-light text-center"
             >
-              {data?.text}
+              {data?.text} 
             </Text>
 
             <div className="flex w-full justify-between mt-5 md:mt-12 md:px-[200px]">
