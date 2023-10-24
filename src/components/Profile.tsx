@@ -5,9 +5,9 @@ function Profile() {
   return (
     <ul className=" px-3 text-md md:text-lg w-full md:max-w-2xl">
       <li className="leading-7">
-        Hi 👋🏽, I'm{" "}
+        Hi 👋🏽, I&apos;m{" "}
         <span className="text-green-900 font-semibold ">Emmanuel,</span> a
-        software engineer that specializes in web and mobile application's
+        software engineer that specializes in web and mobile application&apos;s
         front-end.
       </li>
       <li className="leading-7">

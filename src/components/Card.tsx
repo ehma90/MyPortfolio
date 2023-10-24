@@ -23,6 +23,7 @@ const Card: FC<CardProps> = ({ image, title, slug }) => {
           height={150}
           alt={title}
           className="w-full pointer-events-none rounded-lg shadow-md"
+          priority
         />
       )}
       <Button
