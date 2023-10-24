@@ -4,7 +4,7 @@
  - Emmanuel E. Essien
 
 ### Description
-- This website is purposely created to showcase my bio, projects that i have worked on, and my resume.
+- This website is purposefully created to showcase my bio, projects that i have worked on, and my resume.
 
 ### Technology 
 I utilized modern technologies in creating this project such as
