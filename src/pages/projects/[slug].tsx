@@ -92,10 +92,10 @@ const ProjectDetails = () => {
                 </Button>
               ) : (
                 <div
-                  className="w-32 text-green-900 focus:outline-none bg-white rounded-lg border focus:z-10 focus:ring-4 focus:ring-gray-200 flex justify-center items-center gap-2"
+                  className="w-32 text-green-900 focus:outline-none bg-white rounded-lg border flex justify-center items-center gap-2"
                 >
                   <GrSecure color="#00532D"/>
-                  <Text as="p" variant="p" className="">
+                  <Text as="p" variant="p" className="text-gray-500">
                     Private Repo
                   </Text>
                 </div>
