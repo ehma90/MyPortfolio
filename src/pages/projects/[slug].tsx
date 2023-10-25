@@ -39,7 +39,7 @@ const ProjectDetails = () => {
             <Text
               as="h1"
               variant="h1"
-              className="font-extralight text-5xl text-green-900"
+              className="font-extralight text-5xl text-green-900 text-center"
             >
               {data?.header}
             </Text>
