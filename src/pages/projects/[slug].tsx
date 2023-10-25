@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 import myDatas from "@/data/porfolioDatas";
 import { useRouter } from "next/router";
 import { BsLink45Deg, BsArrowLeft } from "react-icons/bs";
-import { AiFillGithub } from "react-icons/ai";
+import { GrSecure } from "react-icons/gr";
 import React from "react";
 import { Button, Image, Link, Text } from "@/reusable-components";
 import Container from "@/reusable-components/container";
@@ -22,7 +22,11 @@ const ProjectDetails = () => {
     return (
       <Layout title={`${data?.header} project details` || `Project details`}>
         <Container className="  mx-auto px-5 md:px-0">
-          <motion.div animate={{ x: 0 }} initial={{ x: 150 }} className="hidden md:block">
+          <motion.div
+            animate={{ x: 0 }}
+            initial={{ x: 150 }}
+            className="hidden md:block"
+          >
             <Button
               size="sm"
               variant="outlined"
@@ -69,35 +73,41 @@ const ProjectDetails = () => {
               variant="p"
               className="mx-auto md:px-[200px] font-light text-center"
             >
-              {data?.text} 
+              {data?.text}
             </Text>
 
-            <div className="flex w-full justify-between mt-5 md:mt-12 md:px-[200px]">
+            <div className="flex w-full justify-between md:justify-start gap-4 mt-5 md:mt-12 md:px-[200px]">
               {data?.link ? (
                 <Button
-                size="lg"
-                variant="outlined"
+                  size="lg"
+                  variant="outlined"
                   href={data?.link}
                   external
                   rel="noreferrer"
                   className=""
                 >
-                  
                   <Text as="p" variant="p" className="">
                     Github link <span aria-hidden="true">→</span>
                   </Text>
                 </Button>
               ) : (
-                <Link href="#"className="w-32 text-green-900 focus:outline-none bg-white rounded-lg border focus:z-10 focus:ring-4 focus:ring-gray-200 flex justify-center items-center">
-                  Private Repo
-                </Link>
+                <div
+                  className="w-32 text-green-900 focus:outline-none bg-white rounded-lg border focus:z-10 focus:ring-4 focus:ring-gray-200 flex justify-center items-center gap-2"
+                >
+                  <GrSecure color="#00532D"/>
+                  <Text as="p" variant="p" className="">
+                    Private Repo
+                  </Text>
+                </div>
               )}
 
-              <Button size="md" variant="primary"
+              <Button
+                size="md"
+                variant="primary"
                 href={data?.deploy}
                 external
                 rel="noreferrer"
-                className="liveLink"
+                className=""
               >
                 See live <span aria-hidden="true">→</span>
               </Button>

@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <div>
       <motion.div transition={{type: "tween", duration: 5,}} animate={{x: 0}} initial={{x:80}} translate="yes" className="mt-20 py-4 flex justify-center items-center gap-2">
-        <FaLaptopCode size={30} className="text-green-900 text-4xl" />
-        <Text as="h4" variant="h4" className=" text-gray-500"> v.1.1.0</Text>
+        <FaLaptopCode size={26} className="text-green-900 text-4xl" />
+        <Text as="h5" variant="h5" className=" text-gray-500"> v.1.1.0</Text>
       </motion.div>
     </div>
   );
