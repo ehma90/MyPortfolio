@@ -29,7 +29,7 @@ const Card: FC<CardProps> = ({ image, title, slug }) => {
       <Button
         href={`projects/${slug}`}
         size="md"
-        variant="primary"
+        variant="outlined"
         className="w-full"
       >
         See project

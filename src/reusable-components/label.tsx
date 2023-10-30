@@ -9,7 +9,7 @@ const Label = forwardRef<HTMLLabelElement, LabelProps>(
             <label
                 ref={ref}
                 {...rest}
-                className={clsx("text-sm font-red-hat", className)}
+                className={clsx("text-md font-medium font-red-hat", className)}
             >
                 {children}
             </label>

@@ -9,7 +9,7 @@ function Profile() {
     <motion.div animate={{ y: 0 }}
     initial={{ y: 200 }}
     transition={{ duration: 0.9 , type:"spring"}}>
-      <ul className=" px-3 text-md md:text-lg w-full">
+      <ul className="text-md md:text-lg w-full">
         <li className="leading-7">
           Hi 👋🏽, I&apos;m{" "}
           <span className="text-green-900 font-semibold ">Emmanuel,</span> a
