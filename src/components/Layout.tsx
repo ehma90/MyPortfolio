@@ -8,9 +8,10 @@ interface LayoutProps {
   children: ReactNode;
   title: string;
   description?: string;
+  navbar?: boolean
 }
 
-const Layout: FC<LayoutProps> = ({ children, title, description }) => {
+const Layout: FC<LayoutProps> = ({ children, title, description, navbar }) => {
   return (
     <>
       <Head>
@@ -28,7 +29,7 @@ const Layout: FC<LayoutProps> = ({ children, title, description }) => {
       </Head>
       <main className="flex flex-col justify-between h-screen  items-center">
         <div>
-          <Navbar />
+          { navbar ? '' : <Navbar />}
           {children}
         </div>
         <Footer />

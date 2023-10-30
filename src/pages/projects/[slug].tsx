@@ -20,12 +20,11 @@ const ProjectDetails = () => {
     </Layout>;
   } else {
     return (
-      <Layout title={`${data?.header} project details` || `Project details`}>
-        <Container className="  mx-auto px-5 md:px-0">
+      <Layout title={`${data?.header} project details` || `Project details`} navbar>
+        <Container className="  mx-auto px-5 md:px-0 mt-12">
           <motion.div
             animate={{ x: 0 }}
             initial={{ x: 150 }}
-            className="hidden md:block"
           >
             <Button
               size="sm"
