@@ -13,9 +13,9 @@ const Card: FC<CardProps> = ({ image, title, slug }) => {
   const [isLoading, setIsLoading] = useState(false);
 
   return (
-    <motion.div transition={{type: "spring"}} animate={{x: 0}} initial={{x:300}} className="border rounded-2xl p-4 md:p-5 w-full max-w-sm space-y-6 shadow-sm">
+    <motion.div transition={{type: "spring"}} animate={{x: 0}} initial={{x:300}} className="border rounded-2xl p-4 md:p-5 max-w-52 space-y-6 shadow-sm transition hover:border-green-400">
       {isLoading ? (
-        <div className="bg-gray-200 rounded-xl max-w-52 h-52"></div>
+        <div className="bg-gray-200 rounded-xl w-full h-52"></div>
       ) : (
         <Image
           src={image || "/assets/university-website.png"}

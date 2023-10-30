@@ -20,7 +20,7 @@ const ProjectDetails = () => {
     </Layout>;
   } else {
     return (
-      <Layout title={`${data?.header} project details` || `Project details`} navbar>
+      <Layout title={`${data?.header} project details` || `Project details`} showNavbar>
         <Container className="  mx-auto px-5 md:px-0 mt-12">
           <motion.div
             animate={{ x: 0 }}
