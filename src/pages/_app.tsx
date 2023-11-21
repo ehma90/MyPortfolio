@@ -1,9 +1,9 @@
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
-import ReactGA from 'react-ga';
-import { useEffect } from 'react';
-import { useRouter } from 'next/router';
-
+import "@/styles/globals.css";
+import type { AppProps } from "next/app";
+import ReactGA from "react-ga";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
+import { GlobalProvider } from "@/providers/global.provider";
 
 export default function App({ Component, pageProps }: AppProps) {
   // Initialize Google Analytics with Tracking ID
@@ -14,5 +14,9 @@ export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     ReactGA.pageview(window.location.pathname);
   }, [router]);
-  return <Component {...pageProps} />
+  return (
+    <GlobalProvider>
+      <Component {...pageProps} />
+    </GlobalProvider>
+  );
 }
