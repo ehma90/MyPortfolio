@@ -9,9 +9,10 @@ interface LayoutProps {
   title: string;
   description?: string;
   showNavbar?: boolean
+  footer?: boolean
 }
 
-const Layout: FC<LayoutProps> = ({ children, title, description, showNavbar }) => {
+const Layout: FC<LayoutProps> = ({ children, title, description, showNavbar, footer }) => {
   return (
     <>
       <Head>
@@ -32,7 +33,7 @@ const Layout: FC<LayoutProps> = ({ children, title, description, showNavbar }) =
           { showNavbar ? '' : <Navbar />}
           {children}
         </div>
-        <Footer />
+       {footer ? `` :  <Footer />}
       </main>
     </>
   );

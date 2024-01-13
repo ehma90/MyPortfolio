@@ -11,7 +11,7 @@ const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(
     const baseClassName = `p-2.5 font-red-hat block w-full text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500 resize-none h-40`;
     return (
       <div className="w-full space-y-2">
-        {label && <Label id={`${id}-label`}>{label}</Label>}
+        {label && <Label htmlFor={`${id}-label`}>{label}</Label>}
         <textarea
           {...rest}
           id={id}
