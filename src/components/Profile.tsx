@@ -9,12 +9,12 @@ function Profile() {
     <motion.div animate={{ y: 0 }}
     initial={{ y: 200 }}
     transition={{ duration: 0.9 , type:"spring"}}>
-      <ul className="text-md md:text-lg w-full">
+      <ul className="text-md md:text-lg w-full space-y-2 md:space-y-4">
         <li className="leading-7">
           Hi 👋🏽, I&apos;m{" "}
           <span className="text-green-900 font-semibold ">Emmanuel,</span> a
           software engineer that specializes in web and mobile
-          application&apos;s front-end.
+          application&apos;s front-end. I also build RESTful API with Express.js.
         </li>
         <li className="leading-7">
           I build side projects 👨🏽‍💻, you can find it in{" "}
@@ -56,14 +56,14 @@ function Profile() {
           📧
         </li>
       </ul>
-      <Button
+      {/* <Button
         onClick={() => setShowContact(true)}
         size="md"
         variant="primary"
         className=" mt-6"
       >
         Get in touch
-      </Button>
+      </Button> */}
     </motion.div>
   );
 }

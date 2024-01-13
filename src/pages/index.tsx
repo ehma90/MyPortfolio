@@ -19,15 +19,15 @@ export default function Home() {
           <motion.div
             animate={{ y: 0 }}
             initial={{ y: 100 }}
-            className="px-4 md:px-0 mt-12 md:mt-32 w-full md:w-[1024px]"
+            className="px-4 md:px-0 mt-12 md:mt-32"
           >
             <Title />
-            <div className="mt-6 md:mt-8 flex flex-col-reverse md:flex-row justify-between items-center gap-9 md:gap-20">
-              {!showContact ? <Profile /> : <GetInTouch />}
+            <div className={`mt-6 md:mt-8 flex flex-col-reverse md:flex-row justify-between ${showContact ? `items-start` : `items-center`} gap-9 md:gap-20`}>
+               <Profile /> 
               <motion.div
-                whileHover={{ rotate: 8, y:0 }}
+                whileHover={{ rotate: 5, y:0 }}
                 initial={{ rotate: 0, y:0 }}
-                className={` first-letter:cursor-pointer border-4 md:border-8 border-green-900 rounded-[16px] md:w-1/2 ${showContact ? 'hidden md:block ' : 'block'}`}
+                className={`first-letter:cursor-pointer border-4 md:border-8 border-green-900 rounded-[16px] md:w-1/2 h-auto ${showContact ? 'hidden md:block ' : 'block'}`}
               >
                 <Image
                   src="/assets/Emmanuel.jpeg"
