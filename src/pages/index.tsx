@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 export default function Home() {
-  const [rotate, setRotate] = useState(false);
+  const [rotate, setRotate] = useState<boolean>(false);
 
   const { showContact } = useGlobalContext();
   return (
