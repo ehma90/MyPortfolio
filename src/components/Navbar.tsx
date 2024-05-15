@@ -56,7 +56,7 @@ function Navbar() {
         </Link>
       ))}
       <Link
-        href="https://drive.google.com/file/d/1mFcutEc6p0GTogF-_BX5Q7UQ6yYq3xdw/view?usp=drive_link"
+        href="https://drive.google.com/file/d/1WJdVUqwHaUtHtz3HfHH8-u15lOKk-A4g/view?usp=drive_link"
         external
       >
         <Text as="p" variant="p" className="text-lg md:text-xl text-black">
