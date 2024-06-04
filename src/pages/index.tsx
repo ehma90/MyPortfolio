@@ -1,33 +1,38 @@
 import GetInTouch from "@/components/GetInTouch";
 import Layout from "@/components/Layout";
+import Navbar from "@/components/Navbar";
 import Profile from "@/components/Profile";
 import Title from "@/components/Title";
 import { useGlobalContext } from "@/providers/global.provider";
-import { Image, Text } from "@/reusable-components";
+import { Image } from "@/reusable-components";
 import Container from "@/reusable-components/container";
 import { motion } from "framer-motion";
-import { useState } from "react";
 
 export default function Home() {
-  const [rotate, setRotate] = useState<boolean>(false);
-
   const { showContact } = useGlobalContext();
   return (
     <>
       <Layout title="Home">
         <Container>
+          <div className="flex justify-end relative">
+            <Navbar />
+          </div>
           <motion.div
-            animate={{ y: 0 }}
-            initial={{ y: 100 }}
-            className="px-4 md:px-0 mt-12 md:mt-32"
+            className="px-4 md:px-0 mt-24 md:mt-44"
           >
             <Title />
-            <div className={`mt-6 md:mt-8 flex flex-col-reverse md:flex-row justify-between ${showContact ? `items-start` : `items-center`} gap-9 md:gap-20`}>
-               <Profile /> 
+            <div
+              className={`mt-6 md:mt-8 flex flex-col-reverse md:flex-row justify-between ${
+                showContact ? `items-start` : `items-center`
+              } gap-9 md:gap-20`}
+            >
+              <Profile />
               <motion.div
-                whileHover={{ rotate: 5, y:0 }}
-                initial={{ rotate: 0, y:0 }}
-                className={`first-letter:cursor-pointer border-4 md:border-8 border-green-900 rounded-[16px] md:w-1/2 h-auto ${showContact ? 'hidden md:block ' : 'block'}`}
+                whileHover={{ rotate: 3, y: 0 }}
+                initial={{ rotate: 0, y: 0 }}
+                className={`first-letter:cursor-pointer border-4 md:border-8 border-green-900 rounded-[16px] md:w-2/3 ${
+                  showContact ? "hidden md:block " : "block"
+                }`}
               >
                 <Image
                   src="/assets/Emmanuel.jpeg"

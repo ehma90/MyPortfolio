@@ -20,12 +20,12 @@ const ProjectDetails = () => {
     </Layout>;
   } else {
     return (
-      <Layout title={`${data?.header} project details` || `Project details`} showNavbar>
+      <Layout
+        title={`${data?.header} project details` || `Project details`}
+        showNavbar
+      >
         <Container className="  mx-auto px-5 md:px-0 mt-12">
-          <motion.div
-            animate={{ x: 0 }}
-            initial={{ x: 150 }}
-          >
+          <motion.div animate={{ x: 0 }} initial={{ x: 150 }}>
             <Button
               size="sm"
               variant="outlined"
@@ -68,14 +68,14 @@ const ProjectDetails = () => {
             </ul>
 
             <Text
-              as="p"
-              variant="p"
+              as="h6"
+              variant="h6"
               className="mx-auto md:px-[200px] font-light text-center"
             >
               {data?.text}
             </Text>
 
-            <div className="flex w-full justify-between md:justify-start gap-4 mt-5 md:mt-12 md:px-[200px]">
+            <div className="flex w-full justify-between md:justify-center gap-4 mt-5 md:mt-12 md:px-[200px]">
               {data?.link ? (
                 <Button
                   size="lg"
@@ -90,10 +90,8 @@ const ProjectDetails = () => {
                   </Text>
                 </Button>
               ) : (
-                <div
-                  className="w-32 text-green-900 focus:outline-none bg-white rounded-lg border flex justify-center items-center gap-2"
-                >
-                  <GrSecure color="#00532D"/>
+                <div className="w-32 text-green-900 focus:outline-none bg-white rounded-lg border flex justify-center items-center gap-2">
+                  <GrSecure color="#00532D" />
                   <Text as="p" variant="p" className="text-gray-500">
                     Private Repo
                   </Text>

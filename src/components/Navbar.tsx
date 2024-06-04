@@ -1,8 +1,6 @@
-import { Image, Link, Text } from "@/reusable-components";
-import Container from "@/reusable-components/container";
+import { Link, Text } from "@/reusable-components";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import { motion } from "framer-motion";
 
 interface LinksProps {
   id: number;
@@ -16,7 +14,7 @@ function Navbar() {
   const splitLocation = pathname.split("/");
   const [isClicked, setIsClicked] = useState(false);
 
-  const [links, setLinks] = useState([
+  const [links, setLinks] = useState<LinksProps[]>([
     {
       id: 1,
       pathname: "",
@@ -26,6 +24,11 @@ function Navbar() {
       id: 2,
       pathname: "projects",
       title: "projects",
+    },
+    {
+      id: 3,
+      pathname: "resume",
+      title: "resume",
     },
   ]);
 
@@ -38,7 +41,7 @@ function Navbar() {
   };
 
   return (
-    <motion.div transition={{type: "tween"}} animate={{y: 0}} initial={{y:-200}} className=" flex justify-center my-4 md:my-9  md:justify-end gap-x-8">
+    <div className=" fixed top-0 mx-auto bg-white w-full flex justify-center py-5 h-20 md:justify-end gap-x-8">
       {links.map((link) => (
         <Link
           key={link.id}
@@ -55,15 +58,7 @@ function Navbar() {
           </Text>
         </Link>
       ))}
-      <Link
-        href="https://drive.google.com/file/d/1WJdVUqwHaUtHtz3HfHH8-u15lOKk-A4g/view?usp=drive_link"
-        external
-      >
-        <Text as="p" variant="p" className="text-lg md:text-xl text-black">
-          Resume
-        </Text>
-      </Link>
-    </motion.div>
+    </div>
   );
 }
 

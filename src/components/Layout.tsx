@@ -8,11 +8,17 @@ interface LayoutProps {
   children: ReactNode;
   title: string;
   description?: string;
-  showNavbar?: boolean
-  footer?: boolean
+  showNavbar?: boolean;
+  footer?: boolean;
 }
 
-const Layout: FC<LayoutProps> = ({ children, title, description, showNavbar, footer }) => {
+const Layout: FC<LayoutProps> = ({
+  children,
+  title,
+  description,
+  showNavbar,
+  footer,
+}) => {
   return (
     <>
       <Head>
@@ -28,12 +34,10 @@ const Layout: FC<LayoutProps> = ({ children, title, description, showNavbar, foo
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex flex-col justify-between h-screen  items-center">
-        <div>
-          { showNavbar ? '' : <Navbar />}
-          {children}
-        </div>
-       {footer ? `` :  <Footer />}
+      <main className=" flex flex-col justify-between h-screen  items-center">
+        
+        <div>{children}</div>
+        {footer ? `` : <Footer />}
       </main>
     </>
   );

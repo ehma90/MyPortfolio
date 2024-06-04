@@ -18,7 +18,7 @@ const Title: FC<TitleProps> = ({ width }) => {
       </Text>
       <p className="font-medium md:text-2xl">Software Engineer</p>
       <div
-        className={`shadow-lg shadow-green-900/50 mx-auto absolute ${
+        className={`shadow-lg shadow-green-900/50 ${
           width ? width : `w-[85px] md:w-[121px]`
         } border border-green-900`}
       ></div>
