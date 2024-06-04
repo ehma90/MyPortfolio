@@ -18,16 +18,11 @@ function Profile() {
           Express.js.
         </li>
         <li className="leading-7 text-base md:text-lg">
-          I build side projects 👨🏽‍💻, you can find it in{" "}
-          <Link
-            href="https://github.com/ehma90"
-            target="_blank"
-            rel="noreferrer"
-            className="font-semibold text-green-900 underline decoration-1"
-          >
-            my Github
-          </Link>{" "}
-          repository.
+          An organized, dedicated professional with 5 years of experience
+          delivering interactive, responsive, and user-friendly applications,
+          that resonate with users globally. With exceptional collaborativity. ●
+          A proactive contributor who excels in collaborations and support, and
+          drives efficiency across the teams I’m involved with.
         </li>
         <li>
           <Text as={"h6"} variant="h6">
