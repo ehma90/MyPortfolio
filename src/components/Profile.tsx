@@ -22,10 +22,8 @@ function Profile() {
           latest technologies, techniques, and strategies to improve my
           knowledge in this field.
         </li>
-        <li>
-          <Text as={"h6"} variant="h6">
-            Available for jobs 🫱🏻‍🫲🏾 and collaborations.
-          </Text>
+        <li className="leading-7 text-base md:text-lg">
+          Available for jobs 🫱🏻‍🫲🏾 and collaborations.
         </li>
         <li className="leading-7 text-base md:text-lg">
           Feel free to send an{" "}
