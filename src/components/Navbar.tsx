@@ -27,8 +27,8 @@ function Navbar() {
     },
     {
       id: 3,
-      pathname: "resumes",
-      title: "resumes",
+      pathname: "resume",
+      title: "resume",
     },
   ]);
 

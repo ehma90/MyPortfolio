@@ -1,17 +1,17 @@
-"use client";
+import Card from "@/components/Card";
 import Layout from "@/components/Layout";
-import Navbar from "@/components/Navbar";
 import Title from "@/components/Title";
-import { frameworks, languages, resumeData, tools } from "@/data/resume";
-import Container from "@/reusable-components/container";
+import React from "react";
 import { motion } from "framer-motion";
+import Container from "@/reusable-components/container";
+import Navbar from "@/components/Navbar";
+import { frameworks, languages, resumeData, tools } from "@/data/resume";
 
-
-const Resume = () => {
+const resume = () => {
   return (
     <Layout title="Resume">
       <Container>
-        <div className="flex justify-end relative z-20">
+        <div className="flex justify-end relative">
           <Navbar />
         </div>
         <div className="px-4 md:px-0 mt-24 md:mt-44">
@@ -22,14 +22,17 @@ const Resume = () => {
             initial={{ y: 200 }}
             transition={{ duration: 0.9, type: "spring" }}
           >
-            <h2 className="text-green-900 font-bold text-2xl mt-12 mb-4">
+            <h2 className="text-green-900 font-bold text-2xl mt-7 md:mt-12 mb-4 text-center md:text-start">
               Experiences
             </h2>
 
             <ul>
               {resumeData
                 .map((list, index) => (
-                  <li key={index} className="block md:flex gap-x-4 mt-6 mb-14">
+                  <li
+                    key={index}
+                    className="block md:flex gap-x-4 md:mt-6 mb-7 md:mb-14"
+                  >
                     <div className="w-full md:w-[20%]">
                       <label className="text-gray-500">
                         {list?.year?.start} - {list?.year?.end}
@@ -61,7 +64,7 @@ const Resume = () => {
                 .reverse()}
             </ul>
 
-            <h2 className="text-green-900 font-bold text-2xl mt-12 mb-4">
+            <h2 className="text-green-900 font-bold text-2xl mt-7 md:mt-12 mb-4 text-center md:text-start">
               Education
             </h2>
             <div className="block md:flex gap-x-6 w-full">
@@ -80,40 +83,55 @@ const Resume = () => {
               </div>
             </div>
 
-            <h2 className="text-green-900 font-bold text-2xl mt-12 mb-4">
+            <h2 className="text-green-900 font-bold text-2xl mt-7 md:mt-12 mb-4 text-center md:text-start">
               Skills and Tech Stack
             </h2>
-            <div className=" w-full max-w-xl">
+            <div className=" w-full">
               <ul className="space-y-2">
-                <li className="flex gap-x-6 text-gray-600 font-bold whitespace-nowrap">
+                <li className="block md:flex gap-x-4 text-gray-600 font-bold lg:whitespace-nowrap">
                   Programming Languages:{" "}
                   {languages.map((lang, index) => (
-                    <span key={index} className="font-normal whitespace-nowrap">
+                    <span
+                      key={index}
+                      className="font-normal lg:whitespace-nowrap text-black"
+                    >
                       {lang},{" "}
                     </span>
                   ))}
                 </li>
-                <li className="flex gap-x-6 text-gray-600 font-bold">
+                <li className="block md:flex gap-x-4 text-gray-600 font-bold">
                   Frameworks:{" "}
                   {frameworks.map((fra, index) => (
-                    <span key={index} className="font-normal whitespace-nowrap">{fra}, </span>
+                    <span
+                      key={index}
+                      className="font-normal md:whitespace-nowrap text-black"
+                    >
+                      {fra},{" "}
+                    </span>
                   ))}
                 </li>
-                <li className="flex gap-x-6 text-gray-600 font-bold">
+                <li className="block md:flex gap-x-4 text-gray-600 font-bold">
                   Tools:{" "}
                   {tools.map((lang, index) => (
-                    <span key={index} className="font-normal whitespace-nowrap">{lang}, </span>
+                    <span
+                      key={index}
+                      className="font-normal lg:whitespace-nowrap text-black"
+                    >
+                      {lang},{" "}
+                    </span>
                   ))}
                 </li>
               </ul>
             </div>
 
-            <h2 className="resume-header">Contact Information</h2>
+            <h2 className="text-green-900 font-bold text-2xl mt-7 md:mt-12 mb-4 text-center md:text-start">
+              Contact Information
+            </h2>
             <div className="contact">
               <ul className="pb-6">
-                <li>
+                <li className="text-gray-500 font-bold">
                   Email:{" "}
-                  <span>
+                  <span className="font-normal hover:underline">
                     <a
                       href="mailto:ehmaessien@gmail.com"
                       target="_blank"
@@ -123,9 +141,9 @@ const Resume = () => {
                     </a>
                   </span>
                 </li>
-                <li>
+                <li className="text-gray-500 font-bold">
                   Twitter:{" "}
-                  <span>
+                  <span className="font-normal hover:underline">
                     <a
                       href="https://twitter.com/ehmaessieen"
                       target="_blank"
@@ -135,9 +153,9 @@ const Resume = () => {
                     </a>
                   </span>
                 </li>
-                <li>
+                <li className="text-gray-500 font-bold">
                   LinkedIn:{" "}
-                  <span>
+                  <span className="font-normal hover:underline">
                     <a
                       href="https://linkedin.com/in/ehmaessien"
                       target="_blank"
@@ -147,9 +165,9 @@ const Resume = () => {
                     </a>
                   </span>
                 </li>
-                <li>
+                <li className="text-gray-500 font-bold">
                   Github:{" "}
-                  <span>
+                  <span className="font-normal hover:underline">
                     <a
                       href="https://github.com/ehma90"
                       target="_blank"
@@ -159,9 +177,9 @@ const Resume = () => {
                     </a>
                   </span>
                 </li>
-                <li>
+                <li className="text-gray-500 font-bold">
                   Telegram:{" "}
-                  <span>
+                  <span className="font-normal hover:underline" >
                     <a
                       href="https://t.me/ehma90"
                       target="_blank"
@@ -180,4 +198,4 @@ const Resume = () => {
   );
 };
 
-export default Resume;
+export default resume;
