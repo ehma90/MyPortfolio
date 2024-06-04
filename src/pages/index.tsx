@@ -30,7 +30,7 @@ export default function Home() {
               <motion.div
                 whileHover={{ rotate: 3, y: 0 }}
                 initial={{ rotate: 0, y: 0 }}
-                className={`first-letter:cursor-pointer border-4 md:border-8 border-green-900 rounded-[16px] md:w-2/3 ${
+                className={`first-letter:cursor-pointer border-4 md:border-8 border-green-900 rounded-[16px] md:w-3/5 ${
                   showContact ? "hidden md:block " : "block"
                 }`}
               >
