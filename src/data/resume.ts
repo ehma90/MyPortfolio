@@ -76,12 +76,13 @@ export const resumeData = [
 export const tools: string[] = [
   "Version Control Systems ",
   "Node Package Managers",
+  "Yarn",
   "Firebase",
   "Stripe sdk",
   "Github",
-  "Yarn",
   "Jira",
   "Postman",
+  "Apollo client",
   "Vercel",
   "Heroku",
   "Figma.",
@@ -97,4 +98,4 @@ export const frameworks: string[] = [
   "DaisyUI.",
 ];
 
-export const languages: string[] = ["Node.js", "JavaScript", "TypeScript", "CSS3", "HTML5"];
+export const languages: string[] = ["Node.js", "GraphQL", "JavaScript", "TypeScript", "CSS3", "HTML5"];
