@@ -23,12 +23,12 @@ const Layout: FC<LayoutProps> = ({
     <>
       <Head>
         <title>
-          {title ? `${title} | Emmanuel E. Essien` : `Emmanuel E. Essien`}
+          {title ? `${title} | Emmanuel Essien - Frontend Engineer` : `Emmanuel Essien - Frontend Engineer`}
         </title>
         <meta
           name="description"
           content={
-            description ? description : `Emmanule E. Essien's portfolio website`
+            description ? description : `Emmanuel Essien's portfolio website`
           }
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
