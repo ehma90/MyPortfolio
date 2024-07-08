@@ -16,7 +16,7 @@ const Title: FC<TitleProps> = ({ width }) => {
       >
         <span className="font-bold text-blue">Emmanuel</span> Essien
       </Text>
-      <p className="font-medium md:text-2xl">Frontend Engineer</p>
+      <p className="font-medium md:text-2xl">Software Developer</p>
       <div
         className={`shadow-lg shadow-green-900/50 ${
           width ? width : `w-[85px] md:w-[121px]`
