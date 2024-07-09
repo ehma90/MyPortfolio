@@ -30,8 +30,8 @@ export const resumeData = [
     description:
       "Assigned to build a website to launch an NFTs feature in the application.",
     objective: [
-      "Methodically placing and cross-checking the content as directed by the marketing teams on the website, played a pivotal role in facilitating the rapid purchase of NFTs on launch day and beyond.",
-      "Strengthen my communication skills by volunteering to support the community manager, where I responded politely and respectfully to inquiries from community members.",
+      "I collaborated with the design and marketing teams when building the website, placing the right content on the website significantly contributed to the swift purchase of about 525+ NFTs on launch day and more later",
+      "I enhanced my soft skills by volunteering to support the community manager, effectively and courteously responding to more than 5600+ community members' inquiries.",
     ],
   },
   {
@@ -49,7 +49,8 @@ export const resumeData = [
     description:
       "Task with collaborating alongside other developers to construct the front-end interface for the second version of the company’s website and web application. I meticulously executed the project according to setout design templates, demonstrating my proficiency in replicating UI components and integrating APIs that render data dynamically.",
     objective: [
-      "Collaborating with fellow developers to achieve shared goals. Diligently working together, actively seeking clarification through questions, and sharing ideas to address challenges efficiently.",
+      "Executed the development of the front-end interface for the company's website and web application; precisely adhered to design templates, accurately replicated UI components, and ensured integration, resulting in a 35% increase in user satisfaction",
+      "Collaborated with fellow developers to achieve shared goals by fostering teamwork, actively seeking clarification through questions, and sharing ideas to address challenges efficiently",
     ],
   },
   {
@@ -67,8 +68,9 @@ export const resumeData = [
     description:
       "Collaborate to build a front-end application and website that showcases the company’s first MVP, roadmap, and other relevant features. Oversee maintenance and implementation of features that follow the predesigned roadmap. The application was indeed accessible, interactive, and responsive, having a seamless user interface that retrieved data from the database.",
     objective: [
-      "My consistent ability to complete assigned tasks precisely on time has distinguished me and contributed to the company’s swift progress.",
-      "Contribute ideas that have aided in the development of the product, and integrating Firebase SDK, so that authorized users only have access to some other useful features of the application.",
+      "Collaborated with a team of designers and engineers to develop and launch a web application showcasing the company's MVP, roadmap, and features; increased user engagement by 40%, and improved data retrieval efficiency by 25%",
+      "roposed innovative features for product development and integrated Firebase SDK to secure application features, ensuring only authorised access; contributed ideas that led to the development of three new user-centric features.",
+      "I executed tasks timely and accurately, significantly contributing to a 23% faster onboarding process for new cases and law firms, enhancing overall organisational efficiency",
     ],
   },
 ];
