@@ -57,7 +57,7 @@ export const resumeData = [
     id: 3,
     year: {
       start: "August 2023",
-      end: "Present",
+      end: "Jun 2024",
     },
     position: "Contractor",
     role: "Fullstack Engineer",
