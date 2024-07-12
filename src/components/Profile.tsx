@@ -13,7 +13,7 @@ function Profile() {
       <ul className=" w-full space-y-2 md:space-y-4">
         <li className="leading-7 text-base md:text-lg">
           Hi 👋🏽, I&apos;m{" "}
-          <span className="text-green-900 font-semibold ">Emmanuel,</span> a professional software developer with 5 years of learning and
+          <span className="text-green-900 font-semibold ">Emmanuel,</span> a professional frontend engineer with 5 years of learning and
           working experience delivering interactive, responsive, accessible, and
           user-friendly web and mobile applications that resonate with users
           globally. I possess exceptional collaborative, communication, and
