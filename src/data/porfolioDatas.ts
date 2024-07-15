@@ -46,8 +46,8 @@ const myDatas = [
     image: "/assets/protis.png",
     slug: "protis",
     header: "Protis HQ",
-    text: "Protis is a technology start-up that serves as an innovative and creative agency for modern-day businesses. This static webpage was designed and built by myself and my colleagues for the purpose of promoting our skills and businesses.",
-    deploy: "https://protishq.com",
+    text: "An innovative and creative agency for modern day businesses. At Protis, we develop eye-catching brands, build digital products, and deliver campaigns that stand out from the norm.",
+    deploy: "https://protishq.vercel.app/",
     stack: ["React.JS", "TailwindCSS", "AOS animation"],
   },
   {
