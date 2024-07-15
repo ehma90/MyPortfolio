@@ -25,7 +25,7 @@ export const resumeData = [
     position: "Full-time",
     role: "Frontend Engineer",
     company_name: "Redux Protocol",
-    company_description: "Web3 accelerator and launchpad.",
+    company_description: "Redux is a Web3 Accelerator with a focus on truly decentralized and democratized crowdfunding, built on Ethereum",
     company_location: "Canada",
     description:
       "Assigned to build a website to launch an NFTs feature in the application.",
