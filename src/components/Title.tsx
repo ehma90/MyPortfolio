@@ -1,27 +1,38 @@
 import { Text } from "@/reusable-components";
-import { type } from "os";
 import React, { FC } from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
-type TitleProps = {
-  width?: string;
-};
-
-const Title: FC<TitleProps> = ({ width }) => {
+const Title: FC = () => {
   return (
-    <div>
-      <Text
-        as="h1"
-        variant="h1"
-        className="text-2xl md:text-6xl my-2 font-extralight font-sans"
+    <div className="flex flex-row-reverse items-start gap-5">
+      <motion.div
+        whileHover={{ rotate: 3, y: 0 }}
+        initial={{ rotate: 0, y: 0 }}
+        className={` w-16 h-16`}
       >
-        <span className="font-bold text-blue">Emmanuel</span> Essien
-      </Text>
-      <p className="font-medium md:text-2xl">Frontend Engineer</p>
-      <div
-        className={`shadow-lg shadow-green-900/50 ${
-          width ? width : `w-[85px] md:w-[121px]`
-        } border border-green-900`}
-      ></div>
+        <Image
+          src="/assets/emmanuel.jpg"
+          width={500}
+          height={500}
+          alt="My photo"
+          className=" object-cover w-full h-full rounded-full pointer-events-none"
+        />
+      </motion.div>
+      <div>
+        <Text
+          as="h1"
+          variant="h1"
+          className="text-2xl md:text-6xl my-2 font-extralight whitespace-nowrap font-sans"
+        >
+          <span className="font-bold text-blue">Emmanuel</span> Essien
+        </Text>
+        <p className="font-medium md:text-2xl">Software developer</p>
+        <div
+          className={`shadow-lg shadow-green-900/50
+          w-40 border border-white/50`}
+        ></div>
+      </div>
     </div>
   );
 };

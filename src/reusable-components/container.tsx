@@ -4,7 +4,7 @@ import { ComponentPropsWithRef, FC } from "react";
 export interface ContainerProps extends ComponentPropsWithRef<"div"> {}
 
 const Container: FC<ContainerProps> = ({ children, className, ...rest }) => {
-    const baseClassName = "mx-auto w-full md:max-w-5xl";
+    const baseClassName = "mx-auto w-full container";
     return (
         <div className={classNames(baseClassName, className)} {...rest}>
             {children}
