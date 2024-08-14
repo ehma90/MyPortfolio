@@ -1,19 +1,15 @@
-import { useGlobalContext } from "@/providers/global.provider";
 import { Button, Text } from "@/reusable-components";
 import Input from "@/reusable-components/input";
 import Label from "@/reusable-components/label";
-import Spinner from "@/reusable-components/spinner";
 import TextArea from "@/reusable-components/textarea";
 import React from "react";
 import { useForm } from "@formspree/react";
 
 const ContactForm = () => {
-  const { setShowContact } = useGlobalContext();
   const [state, handleSubmit] = useForm("mpzbgqgr");
 
   if (state.succeeded) {
     setTimeout(() => {
-      setShowContact(false);
     }, 5000);
     return (
       <div className=" flex flex-col justify-center space-y-4">
@@ -25,7 +21,6 @@ const ContactForm = () => {
           Thank you for reaching out. 🙂
         </Text>
         <Button
-          onClick={() => setShowContact(false)}
           size="md"
           variant="primary"
         >
@@ -67,7 +62,6 @@ const ContactForm = () => {
 
         <div className="space-x-5">
           <Button
-            onClick={() => setShowContact(false)}
             size="md"
             variant="outlined"
           >
