@@ -1,7 +1,8 @@
-"use client"
+"use client";
 import Layer1 from "@/components/Layer1";
 import LayerTwo from "@/components/LayerTwo";
 import Layout from "@/components/Layout";
+import Navbar from "@/components/Navbar";
 import Container from "@/reusable-components/container";
 
 export default function Home() {
@@ -11,9 +12,12 @@ export default function Home() {
         title="Emmanuel Essien"
         description="Emmanuel Essien is a Software developer & Security Analyst"
       >
-        <Container className="px-4 md:px-40 flex gap-20">
-          <Layer1/>
-          <LayerTwo/>
+        <Container className="px-4 md:px-20">
+          <Navbar />
+          <div className="flex flex-col lg:flex-row gap-10 md:gap-20 w-full pb-10">
+            <Layer1 />
+            <LayerTwo />
+          </div>
         </Container>
       </Layout>
     </>

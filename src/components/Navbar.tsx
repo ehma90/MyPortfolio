@@ -1,10 +1,16 @@
+import { Link } from "@/reusable-components";
 import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="mt-10 flex justify-end gap-5 w-full">
+    <div className="pt-10 flex justify-end gap-5 w-full">
       <p className="underline font-bold cursor-pointer">Cover letter</p>
-      <p className="underline font-bold cursor-pointer">Resume</p>
+      <Link
+        href="https://docs.google.com/document/d/1UXGbY2Hk6mysnjHTrqilk62v1nRaYy4n/edit?usp=sharing&ouid=103092481475437846039&rtpof=true&sd=true"
+        external
+      >
+        <p className="underline font-bold cursor-pointer">Resume</p>
+      </Link>
     </div>
   );
 };
