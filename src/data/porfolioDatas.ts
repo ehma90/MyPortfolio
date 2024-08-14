@@ -1,8 +1,18 @@
+export type DataProps = {
+  id: number;
+  image: string;
+  slug: string;
+  header: string;
+  text: string;
+  link?: string;
+  deploy?: string;
+  stack?: string[];
+};
 
 const myDatas = [
   {
     id: 1,
-    image:  "/assets/university-website.png",
+    image: "/assets/university-website.png",
     slug: "university-website",
     header: "Univesity website",
     text: "A university website(Demo), that shows courses offered by this ideal university. Built using HTML, Css3, Javascript and PHP.",
@@ -19,7 +29,6 @@ const myDatas = [
     link: "https://github.com/ehma90/Tech-AI-Conference",
     deploy: "https://ehma90.github.io/Tech-AI-Conference",
     stack: ["HTML5", "CSS3", "Javascript"],
-    
   },
   {
     id: 3,
@@ -57,7 +66,15 @@ const myDatas = [
     header: "No Impunity",
     text: "No Impunity unlock the potential of litigation funding to support victims of corporate human rights abuse and environmental damage in their fight for justice. In achieving this, I was assigned built this website/web app frontend, using trending programming language like Typescript, Next framework, Firebase for authentication, and Vercel for hosting the frontend. This project has expand and widen my understanding of Typescript.",
     deploy: "https://www.noimpunity.org/",
-    stack: ["Next.ts", "TailwindCSS", "Typescript", "Firebase", "Stripe", "Vercel", "Node" ],
+    stack: [
+      "Next.ts",
+      "TailwindCSS",
+      "Typescript",
+      "Firebase",
+      "Stripe",
+      "Vercel",
+      "Node",
+    ],
   },
 ];
 

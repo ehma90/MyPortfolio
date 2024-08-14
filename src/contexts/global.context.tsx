@@ -1,8 +1,11 @@
+import { DataProps } from "@/data/porfolioDatas";
 import { createContext } from "react";
 
 export type GlobalContextType = {
-    showContact: boolean;
-    setShowContact: React.Dispatch<React.SetStateAction<boolean>>;
+    isDisplaying: boolean;
+    handleProjectsDisplay: (slug:string) => void;
+    showSlug: DataProps;
+    handleGoBack: () => void;
 };
 
 export const GlobalContext = createContext<GlobalContextType | null>(null);

@@ -27,7 +27,7 @@ const Layout: FC<LayoutProps> = ({ children, title, description }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="bg-[#080603] text-white">{children}</div>
+        <div className="bg-[#080603] h-screen text-white">{children}</div>
       </main>
     </>
   );
