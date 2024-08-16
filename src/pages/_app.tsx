@@ -1,10 +1,10 @@
-import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import ReactGA from "react-ga";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import { GlobalProvider } from "@/providers/global.provider";
-
+import { Analytics } from "@vercel/analytics/react";
+import "@/styles/globals.css";
 
 export default function App({ Component, pageProps }: AppProps) {
   // Initialize Google Analytics with Tracking ID
@@ -18,6 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <GlobalProvider>
       <Component {...pageProps} />
+      <Analytics />
     </GlobalProvider>
   );
 }

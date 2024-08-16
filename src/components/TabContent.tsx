@@ -2,20 +2,21 @@
 
 import React from "react";
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
-import myDatas from "@/data/porfolioDatas";
-import CardGroup from "./CardGroup";
-import { useGlobalContext } from "@/providers/global.provider";
-import ProjectSlug from "./ProjectSlug";
+import Project from "./Project";
+import TechStack from "./TechStack";
 
 const categories = [
   {
     name: "Projects",
-    content: "",
+    content: <Project />,
+  },
+  {
+    name: "Tech Stack",
+    content: <TechStack />,
   },
 ];
 
 const TabContent = () => {
-  const { isDisplaying, showSlug } = useGlobalContext();
   return (
     <div className="flex w-full justify-center pt-10">
       <div className="w-full h-full">
@@ -24,32 +25,19 @@ const TabContent = () => {
             {categories.map(({ name }) => (
               <Tab
                 key={name}
-                className="rounded-full py-1 px-3 text-sm/6 font-semibold text-white focus:outline-none data-[selected]:bg-white/10 data-[hover]:bg-white/5 data-[selected]:data-[hover]:bg-white/10 data-[focus]:outline-1 data-[focus]:outline-white"
+                className="rounded-3xl border border-white/50 hover:border-white py-1 px-3 text-sm/6 font-semibold text-white focus:outline-none data-[selected]:bg-white/20 data-[hover]:bg-white/5 data-[focus]:outline-1 data-[focus]:outline-white"
               >
                 {name}
               </Tab>
             ))}
           </TabList>
           <TabPanels className="mt-3">
-            {categories.map(({ name }) => (
+            {categories.map(({ name, content }) => (
               <TabPanel
                 key={name}
                 className="rounded-xl bg-white/10 p-6 h-[70vh] overflow-y-auto"
               >
-                {!isDisplaying ? (
-                  <CardGroup data={myDatas} />
-                ) : (
-                  <ProjectSlug
-                    id={showSlug.id}
-                    image={showSlug.image}
-                    header={showSlug.header}
-                    text={showSlug.text}
-                    slug=""
-                    link={showSlug.link}
-                    stack={showSlug.stack}
-                    deploy={showSlug.deploy}
-                  />
-                )}
+                {content}
               </TabPanel>
             ))}
           </TabPanels>

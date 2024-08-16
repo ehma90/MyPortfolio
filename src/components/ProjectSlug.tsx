@@ -37,7 +37,7 @@ const ProjectSlug: React.FC<DataProps> = ({
         <Text
           as="h3"
           variant="h3"
-          className="w-full md:text-2xl text-center text-white/70 hidden md:block"
+          className="w-full md:text-3xl text-center text-white/70 hidden md:block mr-16"
         >
           {header}
         </Text>

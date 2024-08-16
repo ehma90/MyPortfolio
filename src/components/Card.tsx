@@ -26,7 +26,7 @@ const Card: FC<CardProps> = ({ image, title, slug }) => {
         onClick={() => handleProjectsDisplay(slug)}
         size="md"
         variant="outlined"
-        className="w-full"
+        className="w-full font-bold"
       >
         See project
       </Button>
