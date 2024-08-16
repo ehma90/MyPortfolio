@@ -22,7 +22,7 @@ export const buttonClasses = {
   },
   variant: {
     primary:
-      "text-white bg-black disabled:bg-green-400 disabled:hover:bg-green-inherit hover:text-white hover:bg-white/50 hover:ease-in hover:duration-75 focus:outline-none",
+      "text-white bg-black disabled:bg-green-400 disabled:hover:bg-green-inherit hover:text-white hover:bg-white/50 hover:ease-in hover:duration-75 focus:outline-none border border-white",
     outlined:
       "text-green-900 focus:outline-none bg-white rounded-lg border border-white hover:bg-white/50 hover:text-white focus:z-10 focus:ring-4 focus:ring-gray-200",
     text: "bg-transparent outlined-none",

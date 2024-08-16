@@ -25,7 +25,8 @@ export const resumeData = [
     position: "Full-time",
     role: "Frontend Engineer",
     company_name: "Redux Protocol",
-    company_description: "Redux is a Web3 Accelerator with a focus on truly decentralized and democratized crowdfunding, built on Ethereum",
+    company_description:
+      "Redux is a Web3 Accelerator with a focus on truly decentralized and democratized crowdfunding, built on Ethereum",
     company_location: "Canada",
     description:
       "Assigned to build a website to launch an NFTs feature in the application.",
@@ -75,29 +76,117 @@ export const resumeData = [
   },
 ];
 
-export const tools: string[] = [
-  "Version Control Systems ",
-  "Node Package Managers",
-  "Yarn",
-  "Firebase",
-  "Stripe sdk",
-  "Github",
-  "Jira",
-  "Postman",
-  "Apollo client",
-  "Vercel",
-  "Heroku",
-  "Figma.",
+export const techStack = [
+  {
+    languages: [
+      {
+        language: "JavaScript ES6",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      },
+      {
+        language: "TypeScript",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+      },
+      {
+        language: "GraphQL",
+        image: "https://github.com/graphql.png",
+      },
+      {
+        language: "SQL",
+        image: "https://www.svgrepo.com/show/331760/sql-database-generic.svg",
+      },
+      {
+        language: "HTML",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      },
+      {
+        language: "CSS3",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      },
+    ],
+    framework: [
+      {
+        language: "React",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      },
+      {
+        language: "Next.js",
+        image: "https://cdn.worldvectorlogo.com/logos/next-js.svg",
+      },
+      {
+        language: "Express.js",
+        image:
+          "https://www.dailyupblog.com/wp-content/uploads/node_express.jpg",
+      },
+      {
+        language: "Node.js",
+        image:
+          "https://cdn.prod.website-files.com/6377ac1a39ff1e65214224e5/63c1b9a98bb8e173ea7e0d9f_nodejs-new-pantone-black_blog.png",
+      },
+      {
+        language: "Apollo Client/Server",
+        image:
+          "https://cdn.hashnode.com/res/hashnode/image/upload/v1635255536906/ZgWIk2ON6.jpeg",
+      },
+    ],
+    tools: [
+      {
+        language: "Git",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+      },
+      {
+        language: "GitHub",
+        image:
+          "https://user-images.githubusercontent.com/3369400/139447912-e0f43f33-6d9f-45f8-be46-2df5bbc91289.png",
+      },
+      {
+        language: "Postman",
+        image: "https://www.cdnlogo.com/logos/p/20/postman.svg",
+      },
+      {
+        language: "Jira",
+        image: "https://cdn-icons-png.flaticon.com/512/5968/5968875.png",
+      },
+      {
+        language: "Vercel",
+        image:
+          "https://w7.pngwing.com/pngs/436/888/png-transparent-vercel-hd-logo-thumbnail.png",
+      },
+      {
+        language: "Netlify",
+        image: "https://flaviocopes.com/images/netlify/netlify-logo.png",
+      },
+      {
+        language: "Yarn",
+        image:
+          "https://www.pikpng.com/pngl/m/84-844380_yarn-global-packages-not-working-yarn-package-manager.png",
+      },
+      {
+        language: "NPM",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/540px-Npm-logo.svg.png",
+      },
+      {
+        language: "Firebase",
+        image:
+          "https://firebase.google.com/static/images/brand-guidelines/logo-logomark.png",
+      },
+      {
+        language: "MongoDB",
+        image:
+          "https://cdn.worldvectorlogo.com/logos/mongodb-icon-2.svg",
+      },
+      {
+        language: "Docker",
+        image:
+          "https://c0.klipartz.com/pngpicture/219/411/gratis-png-logo-docker-kubernetes-microservices-cloud-computing-logo-dockers-thumbnail.png",
+      },
+    ],
+  },
 ];
-
-export const frameworks: string[] = [
-  "Express.js",
-  "Next.js",
-  "React.js",
-  "Redux",
-  "TailwindCSS",
-  "Bootstrap",
-  "DaisyUI.",
-];
-
-export const languages: string[] = ["Node.js", "GraphQL", "JavaScript", "TypeScript", "CSS3", "HTML5"];

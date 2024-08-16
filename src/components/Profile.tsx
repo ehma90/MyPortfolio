@@ -14,13 +14,20 @@ function Profile() {
     >
       <ul className=" w-full space-y-2 md:space-y-4 mb-5">
         <li className="leading-7 text-base text-white/70">
-          Hi 👋🏽, I&apos;m Emmanuel, a professional Software developer with 5
-          years of learning and working experience delivering interactive,
-          responsive, accessible, and user-friendly web and mobile applications
-          that resonate with users globally. I possess exceptional
-          collaborative, communication, and proactive contributor skills. I
-          constantly educate myself on the latest technologies, techniques, and
-          strategies to improve my knowledge in this field.
+          Hello 👋🏽, I&apos;m Emmanuel, a professional Software Developer with
+          five years of experience in both learning and working within the
+          field. I specialize in delivering interactive, responsive, accessible,
+          and user-friendly web and mobile applications that resonate with users
+          globally. While I hold a Google Professional Cybersecurity
+          certification, my core strengths are in engineering frontend web and
+          mobile applications, leveraging the latest programming languages,
+          tools, and technologies. <br /> <br /> In addition, I have
+          considerable expertise in backend development, particularly in
+          building and testing APIs, as well as managing data storage and
+          retrieval from databases. My passion for security is evident in every
+          project I undertake. My extensive knowledge of the TCP/IP model, NIST
+          Cybersecurity Framework, and SIEM tools such as Splunk and Chronicle
+          uniquely positions me to design and develop secure applications.
         </li>
         <li className="leading-7 text-base text-white/70">
           Available for jobs 🫱🏻‍🫲🏾 and collaborations.

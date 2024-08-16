@@ -15,7 +15,7 @@ const Layout: FC<LayoutProps> = ({ children, title, description }) => {
         <title>
           {title
             ? `${title} | Emmanuel Essien - Software developer`
-            : `Emmanuel Essien - Software developer`}
+            : `Emmanuel Essien - Software developer | Security Analyst`}
         </title>
         <meta
           name="description"
@@ -27,7 +27,7 @@ const Layout: FC<LayoutProps> = ({ children, title, description }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="md:h-screen h-full">{children}</div>
+        <div className="lg:h-screen h-full">{children}</div>
       </main>
     </>
   );

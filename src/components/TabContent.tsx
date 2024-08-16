@@ -10,15 +10,15 @@ const categories = [
     name: "Projects",
     content: <Project />,
   },
-  // {
-  //   name: "Tech Stack",
-  //   content: <TechStack />,
-  // },
+  {
+    name: "Tech Stack",
+    content: <TechStack />,
+  },
 ];
 
 const TabContent = () => {
   return (
-    <div className="flex w-full justify-center pt-10">
+    <div className="flex w-full justify-center pt-8">
       <div className="w-full h-full">
         <TabGroup>
           <TabList className="flex gap-4">

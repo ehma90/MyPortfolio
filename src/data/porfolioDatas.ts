@@ -61,6 +61,15 @@ const myDatas = [
   },
   {
     id: 6,
+    image: "/assets/4waymedia.png",
+    slug: "fourwaymedia",
+    header: "Fourway Media",
+    text: "Fourway Media is a design & animation studio. We take joy in working together with amazing artists, creating meaningful pieces that feel, move, look and sound amazing.",
+    deploy: "https://www.fourwaymedia.com/",
+    stack: ["Next.JS", "TailwindCSS", "Vercel", "Formspree"],
+  },
+  {
+    id: 7,
     image: "/assets/noimpunity.png",
     slug: "noimpunity",
     header: "No Impunity",

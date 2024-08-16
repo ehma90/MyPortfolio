@@ -12,9 +12,9 @@ export default function Home() {
         title="Emmanuel Essien"
         description="Emmanuel Essien is a Software developer & Security Analyst"
       >
-        <Container className="px-4 md:px-20">
+        <Container className="px-4 lg:px-20">
           <Navbar />
-          <div className="flex flex-col lg:flex-row gap-10 md:gap-20 w-full pb-10">
+          <div className="flex flex-col lg:flex-row gap-10 lg:gap-20 w-full pb-10">
             <Layer1 />
             <LayerTwo />
           </div>
