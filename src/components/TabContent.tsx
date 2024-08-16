@@ -10,10 +10,10 @@ const categories = [
     name: "Projects",
     content: <Project />,
   },
-  {
-    name: "Tech Stack",
-    content: <TechStack />,
-  },
+  // {
+  //   name: "Tech Stack",
+  //   content: <TechStack />,
+  // },
 ];
 
 const TabContent = () => {
