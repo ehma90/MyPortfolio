@@ -156,7 +156,7 @@ export const techStack = [
       {
         language: "Vercel",
         image:
-          "https://w7.pngwing.com/pngs/436/888/png-transparent-vercel-hd-logo-thumbnail.png",
+          "https://assets.vercel.com/image/upload/front/favicon/vercel/152x152.png",
       },
       {
         language: "Netlify",
@@ -179,8 +179,7 @@ export const techStack = [
       },
       {
         language: "MongoDB",
-        image:
-          "https://cdn.worldvectorlogo.com/logos/mongodb-icon-2.svg",
+        image: "https://cdn.worldvectorlogo.com/logos/mongodb-icon-2.svg",
       },
       {
         language: "Docker",

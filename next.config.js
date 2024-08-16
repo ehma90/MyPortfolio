@@ -13,7 +13,7 @@ const nextConfig = {
       'user-images.githubusercontent.com',
       'firebase.google.com',
       'flaviocopes.com',
-      'w7.pngwing.com',
+      'assets.vercel.com',
       'cdn-icons-png.flaticon.com',
       'www.pikpng.com',
       'upload.wikimedia.org',
