@@ -14,7 +14,8 @@ I utilized modern technologies in creating this project such as
 - 'Raleway', sans-serif
 
 ### Colors
-TailwindCSS comes with customs color which i utitlized in this project which includes all shades of 'Green' ranging from "*-green-100"  to "*-green-900"
+.background-color: #080603;
+.color: #fff;
 
 
 
