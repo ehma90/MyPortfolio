@@ -14,8 +14,7 @@ function Profile() {
     >
       <ul className=" w-full space-y-2 md:space-y-4 mb-5">
         <li className="leading-7 text-base text-white/70">
-          Hello 👋🏽, I&apos;m Emmanuel, a professional Software Developer with
-          five years of experience in both learning and working within the
+          Hello 👋🏽, I&apos;m Emmanuel, a professional Software Developer with years of experience in both learning and working within the
           field. I specialize in delivering interactive, responsive, accessible,
           and user-friendly web and mobile applications that resonate with users
           globally. While I hold a Google Professional Cybersecurity
