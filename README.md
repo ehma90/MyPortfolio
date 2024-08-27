@@ -1,10 +1,6 @@
-### My Porfolio
 
-## Created and maintained by:
- - Emmanuel E. Essien
-
-### Description
-- This website is purposefully created to showcase my bio, projects that i have worked on, and my resume.
+### Emmanuel's Portfolio
+Welcome to my portfolio! This repository showcases my work as a frontend web developer and Software Developer. Here, you'll find projects that demonstrate my skills in web and mobile application development, focusing on interactive, responsive, and user-friendly interfaces.
 
 ### Technology 
 I utilized modern technologies in creating this project such as
@@ -18,7 +14,8 @@ I utilized modern technologies in creating this project such as
 - 'Raleway', sans-serif
 
 ### Colors
-TailwindCSS comes with customs color which i utitlized in this project which includes all shades of 'Green' ranging from "*-green-100"  to "*-green-900"
+.background-color: #080603;
+.color: #fff;
 
 
 
