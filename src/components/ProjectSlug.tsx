@@ -18,7 +18,8 @@ const ProjectSlug: React.FC<DataProps> = ({
 }) => {
   const { handleGoBack } = useGlobalContext();
   return (
-    <div>
+    <div
+    >
       <div className="flex items-center">
         <motion.div
           animate={{ x: 0 }}
@@ -63,7 +64,7 @@ const ProjectSlug: React.FC<DataProps> = ({
           />
         </div>
 
-        <ul className="py-4 md:py-8 md:mx-10 flex justify-center flex-wrap gap-4 opacity-50">
+        <ul className="py-4 md:py-8 md:mx-20 flex justify-center flex-wrap gap-4 opacity-50">
           {stack?.map((item: any) => (
             <li
               key={item.id}
@@ -77,7 +78,7 @@ const ProjectSlug: React.FC<DataProps> = ({
         <Text
           as="h6"
           variant="h6"
-          className="mx-auto text-base md:text-lg text-white/60 md:text-center"
+          className="mx-auto md:px-20 text-base md:text-lg text-white/60 md:text-center"
         >
           {text}
         </Text>

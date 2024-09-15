@@ -1,7 +1,7 @@
 export type DataProps = {
   id: number;
   image: string;
-  slug: string;
+  slug?: string;
   header: string;
   text: string;
   link?: string;
@@ -61,6 +61,15 @@ const myDatas = [
   },
   {
     id: 6,
+    image: "/assets/bfwc.png",
+    slug: "bfwc",
+    header: "Buy Food With Crypto",
+    text: "BWFC is an idea my friends came up with, to create an online food service platform with blockchain used as payment. I quickly dive in to creating this website for it. Only desktop version available.",
+    deploy: "https://buy-food-with-crypto.vercel.app",
+    stack: ["React.JS", "TailwindCSS",],
+  },
+  {
+    id: 7,
     image: "/assets/4waymedia.png",
     slug: "fourwaymedia",
     header: "Fourway Media",
@@ -69,7 +78,7 @@ const myDatas = [
     stack: ["Next.JS", "TailwindCSS", "Vercel", "Formspree"],
   },
   {
-    id: 7,
+    id: 8,
     image: "/assets/noimpunity.png",
     slug: "noimpunity",
     header: "No Impunity",
