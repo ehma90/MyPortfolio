@@ -19,7 +19,7 @@ const CardGroup: React.FC<{ data: DataProps[] }> = ({ data }) => {
               key={item?.id}
               image={item?.image}
               title={item.header}
-              slug={item.slug}
+              slug={item?.slug}
             />
           ))
           .reverse()}

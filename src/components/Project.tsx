@@ -19,6 +19,7 @@ const Project = () => {
           text={showSlug.text}
           link={showSlug.link}
           stack={showSlug.stack}
+          slug={showSlug.slug}
           deploy={showSlug.deploy}
         />
       )}
