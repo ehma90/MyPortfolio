@@ -1,7 +1,7 @@
 export type DataProps = {
   id: number;
   image: string;
-  slug?: string;
+  slug: string;
   header: string;
   text: string;
   link?: string;
