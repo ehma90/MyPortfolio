@@ -9,7 +9,7 @@ const Title: FC = () => {
       <motion.div
         whileHover={{ rotate: 3, y: 0 }}
         initial={{ rotate: 0, y: 0 }}
-        className={` w-16 h-16 mt-3 hidden md:block`}
+        className={`w-16 h-16 mt-3 hidden md:block`}
       >
         <Image
           src="/assets/emmanuel.jpg"
@@ -28,7 +28,7 @@ const Title: FC = () => {
           <span className="font-bold text-blue">Emmanuel</span> Essien
         </Text>
         <p className="font-medium md:text-2xl">
-          Software developer | Security Analyst
+          FullStack Engineer | Security Analyst
         </p>
         <div
           className={`shadow-lg shadow-white/50
