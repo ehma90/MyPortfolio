@@ -17,8 +17,8 @@ function Profile() {
           Hello 👋🏽, I&apos;m Emmanuel, a professional FullStack developer. I
           specialise in delivering interactive, responsive, and user-friendly
           web and mobile applications that resonate with users globally. My core
-          strengths lie in frontend technologies, where It's leverage to create
-          scalable, efficient, and high-performing applications. I’m passionate
+          strengths lie in frontend technologies, where It&apos;s leverage to create
+          scalable, efficient, and high-performing applications. I&apos;m passionate
           about building complete solutions, from database architecture to
           seamless user interfaces, ensuring a smooth and impactful experience.{" "}
           <br /> <br />
