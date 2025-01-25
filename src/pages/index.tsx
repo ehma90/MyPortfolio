@@ -9,8 +9,7 @@ export default function Home() {
   return (
     <>
       <Layout
-        title="Emmanuel Essien"
-        description="Emmanuel Essien is a Software developer & Security Analyst"
+        description="Emmanuel Essien is a FullStack Developer & Security Analyst"
       >
         <Container className="px-4 lg:px-20">
           <Navbar />

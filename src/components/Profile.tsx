@@ -13,7 +13,7 @@ function Profile() {
       className="w-full mt-8"
     >
       <ul className=" w-full space-y-2 md:space-y-4 mb-5">
-        <li className="leading-7 text-base text-white/70">
+        <li className="leading-7 text-base text-white/70 ">
           Hello 👋🏽, I&apos;m Emmanuel, a professional FullStack developer. I
           specialise in delivering interactive, responsive, and user-friendly
           web and mobile applications that resonate with users globally. My core

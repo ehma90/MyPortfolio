@@ -4,7 +4,7 @@ import { FC } from "react";
 
 interface LayoutProps {
   children: ReactNode;
-  title: string;
+  title?: string;
   description?: string;
 }
 
@@ -14,8 +14,8 @@ const Layout: FC<LayoutProps> = ({ children, title, description }) => {
       <Head>
         <title>
           {title
-            ? `${title} | Emmanuel Essien - Software developer`
-            : `Emmanuel Essien - Software developer | Security Analyst`}
+            ? `${title} | Emmanuel Essien - FullStack developer`
+            : `Emmanuel Essien - FullStack developer `}
         </title>
         <meta
           name="description"

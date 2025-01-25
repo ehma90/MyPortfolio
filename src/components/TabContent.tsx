@@ -18,7 +18,7 @@ const categories = [
 
 const TabContent = () => {
   return (
-    <div className="flex w-full justify-center pt-8">
+    <div className="flex w-full justify-center pt-5">
       <div className="w-full h-full">
         <TabGroup>
           <TabList className="flex gap-4">
@@ -35,7 +35,7 @@ const TabContent = () => {
             {categories.map(({ name, content }) => (
               <TabPanel
                 key={name}
-                className="rounded-xl bg-white/[0.02] p-6 h-[70vh] overflow-y-auto"
+                className="rounded-xl bg-white/[0.02] p-2 h-[80vh] overflow-y-auto"
               >
                 {content}
               </TabPanel>

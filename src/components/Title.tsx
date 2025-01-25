@@ -23,7 +23,7 @@ const Title: FC = () => {
         <Text
           as="h1"
           variant="h1"
-          className="text-2xl md:text-5xl font-extralight"
+          className="text-2xl md:text-5xl font-extralight font-sans"
         >
           <span className="font-bold text-blue">Emmanuel</span> Essien
         </Text>
