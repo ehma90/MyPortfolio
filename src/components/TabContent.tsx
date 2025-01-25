@@ -25,7 +25,7 @@ const TabContent = () => {
             {categories.map(({ name }) => (
               <Tab
                 key={name}
-                className="rounded-3xl border border-white/50 hover:border-white py-1 px-3 text-sm/6 font-semibold text-white focus:outline-none data-[selected]:bg-white/20 data-[hover]:bg-white/5 data-[focus]:outline-1 data-[focus]:outline-white"
+                className="rounded-md border border-white/50 hover:border-white py-1 px-3 text-sm/6 font-semibold text-white focus:outline-none data-[selected]:bg-white/20 data-[hover]:bg-white/5 data-[focus]:outline-1 data-[focus]:outline-white"
               >
                 {name}
               </Tab>
@@ -35,7 +35,7 @@ const TabContent = () => {
             {categories.map(({ name, content }) => (
               <TabPanel
                 key={name}
-                className="rounded-xl bg-white/10 p-6 h-[70vh] overflow-y-auto"
+                className="rounded-xl bg-white/[0.02] p-6 h-[70vh] overflow-y-auto"
               >
                 {content}
               </TabPanel>

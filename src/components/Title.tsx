@@ -27,8 +27,8 @@ const Title: FC = () => {
         >
           <span className="font-bold text-blue">Emmanuel</span> Essien
         </Text>
-        <p className="font-medium md:text-2xl">
-          FullStack Engineer | Security Analyst
+        <p className="font-medium md:text-base">
+          FullStack Web & Mobile Developer || Security Analyst
         </p>
         <div
           className={`shadow-lg shadow-white/50
