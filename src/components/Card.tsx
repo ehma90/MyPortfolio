@@ -13,13 +13,13 @@ const Card: FC<CardProps> = ({ image, title, slug }) => {
   const { handleProjectsDisplay } = useGlobalContext();
 
   return (
-    <div className="border w-full max-w-xl rounded-2xl p-3 md:p-4  space-y-6 transition border-white/50 hover:border-white/50">
+    <div className="border w-full max-w-xl rounded-md p-3 md:p-4  space-y-6 transition border-white/50 hover:border-white/50">
       <Image
         src={image || "/assets/university-website.png"}
         width={200}
         height={150}
         alt={title || "hello"}
-        className="w-full pointer-events-none rounded-lg shadow-md"
+        className="w-full pointer-events-none rounded-md shadow-md"
         priority
       />
       <Button

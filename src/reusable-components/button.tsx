@@ -13,7 +13,7 @@ export interface ButtonProps extends ComponentPropsWithRef<"button"> {
 }
 
 export const buttonClasses = {
-  base: "inline-flex justify-center items-center gap-x-2 rounded-lg font-medium font-red-hat",
+  base: "inline-flex justify-center items-center gap-x-2 rounded-md font-medium font-red-hat",
   size: {
     xs: "px-3 py-2 text-xs",
     sm: "px-3 py-2 text-sm",

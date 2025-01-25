@@ -14,8 +14,20 @@ function Profile() {
     >
       <ul className=" w-full space-y-2 md:space-y-4 mb-5">
         <li className="leading-7 text-base text-white/70">
-          Hello 👋🏽, I&apos;m Emmanuel,a professional Full Stack Developer with 3 years of experience in both learning and working in the field. I specialise in delivering interactive, responsive, and user-friendly web and mobile applications that resonate with users globally. My core strengths lie in full-stack development, where I leverage the latest front-end and back-end technologies to create scalable, efficient, and high-performing applications. I’m passionate about building complete solutions, from database architecture to seamless user interfaces, ensuring a smooth and impactful experience.
-          I have considerable expertise in backend development, particularly in building and testing APIs, as well as managing data storage and retrieval from databases. 
+          Hello 👋🏽, I&apos;m Emmanuel, a professional FullStack developer. I
+          specialise in delivering interactive, responsive, and user-friendly
+          web and mobile applications that resonate with users globally. My core
+          strengths lie in frontend technologies, where It&apos;s leverage to create
+          scalable, efficient, and high-performing applications. I&apos;m passionate
+          about building complete solutions, from database architecture to
+          seamless user interfaces, ensuring a smooth and impactful experience.{" "}
+          <br /> <br />
+          In addition, I have considerable expertise in backend development,
+          particularly in building and testing APIs using technologies like Express.js and Node.js, as well as managing data
+          storage and retrieval from databases. I have extensive knowledge of
+          the TCP/IP model, NIST Cybersecurity Framework, and SIEM tools such as
+          Splunk and Chronicle uniquely positions me to design and develop
+          secure applications.
         </li>
         <li className="leading-7 text-base text-white/70">
           Available for jobs 🫱🏻‍🫲🏾 and collaborations.
