@@ -1,9 +1,8 @@
 export type DataProps = {
-  id: number;
-  image: string;
+  image: string | undefined;
   slug: string;
-  header: string;
-  text: string;
+  header: string | undefined;
+  text: string | undefined;
   link?: string;
   deploy?: string;
   stack?: string[];
@@ -11,7 +10,6 @@ export type DataProps = {
 
 const myDatas = [
   {
-    id: 1,
     image: "/assets/university-website.png",
     slug: "university-website",
     header: "Univesity website",
@@ -21,7 +19,6 @@ const myDatas = [
     stack: ["HTML5", "CSS3", "Javascript", "PHP"],
   },
   {
-    id: 2,
     image: "/assets/tech-conference.png",
     slug: "tech-conference",
     header: "Tech AI conference",
@@ -31,7 +28,6 @@ const myDatas = [
     stack: ["HTML5", "CSS3", "Javascript"],
   },
   {
-    id: 3,
     image: "/assets/tic-tac-toe.png",
     slug: "tic-tac-toe",
     header: "TIC-TAC-TOE",
@@ -41,7 +37,6 @@ const myDatas = [
     stack: ["HTML5", "CSS3", "Javascript"],
   },
   {
-    id: 4,
     image: "/assets/pebble.png",
     slug: "pebble",
     header: "Pebble Landing Page",
@@ -51,7 +46,6 @@ const myDatas = [
     stack: ["React.JS", "TailwindCSS"],
   },
   {
-    id: 5,
     image: "/assets/protis.png",
     slug: "protis",
     header: "Protis HQ",
@@ -60,7 +54,6 @@ const myDatas = [
     stack: ["React.JS", "TailwindCSS", "AOS animation"],
   },
   {
-    id: 6,
     image: "/assets/bfwc.png",
     slug: "bfwc",
     header: "Buy Food With Crypto",
@@ -69,7 +62,6 @@ const myDatas = [
     stack: ["React.JS", "TailwindCSS",],
   },
   {
-    id: 7,
     image: "/assets/4waymedia.png",
     slug: "fourwaymedia",
     header: "Fourway Media",
@@ -78,7 +70,6 @@ const myDatas = [
     stack: ["Next.JS", "TailwindCSS", "Vercel", "Formspree"],
   },
   {
-    id: 8,
     image: "/assets/noimpunity.png",
     slug: "noimpunity",
     header: "No Impunity",

@@ -16,8 +16,8 @@ const CardGroup: React.FC<{ data: DataProps[] }> = ({ data }) => {
         {data
           .map((item) => (
             <Card
-              key={item?.id}
-              image={item?.image}
+              key={item?.slug}
+              image={item?.image || ""}
               title={item.header}
               slug={item?.slug}
             />

@@ -1,6 +1,7 @@
 import { useGlobalContext } from "@/providers/global.provider";
 import { Button, Image } from "@/reusable-components";
 import Spinner from "@/reusable-components/spinner";
+import { useRouter } from "next/navigation";
 import React, { FC, useEffect, useState } from "react";
 
 interface CardProps {
@@ -10,7 +11,7 @@ interface CardProps {
 }
 
 const Card: FC<CardProps> = ({ image, title, slug }) => {
-  const { handleProjectsDisplay } = useGlobalContext();
+  const router = useRouter()
 
   return (
     <div className="border w-full max-w-xl rounded-md p-3  space-y-4 transition border-white/50 hover:border-white/50">
@@ -23,7 +24,7 @@ const Card: FC<CardProps> = ({ image, title, slug }) => {
         priority
       />
       <Button
-        onClick={() => handleProjectsDisplay(slug)}
+        onClick={() => router.push(`/projects/${slug}`)}
         size="md"
         variant="outlined"
         className="w-full font-bold"
