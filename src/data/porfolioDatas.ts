@@ -59,7 +59,7 @@ const myDatas = [
     header: "Buy Food With Crypto",
     text: "BWFC is an idea my friends came up with, to create an online food service platform with blockchain used as payment. I quickly dive in to creating this website for it. Only desktop version available.",
     deploy: "https://buy-food-with-crypto.vercel.app",
-    stack: ["React.JS", "TailwindCSS",],
+    stack: ["React.JS", "TailwindCSS"],
   },
   {
     image: "/assets/4waymedia.png",
@@ -89,7 +89,7 @@ const myDatas = [
     image: "/assets/pluginent.png",
     slug: "pluginent",
     header: "Plugin Entertainment",
-    text: "Pluginent is a user-friendly platform that connects users to live events while providing creators the right tools to host events and reach their targeted audience. I was assigned to build this web application frontend and APis, using programming language like Typescript, Next framework, and Vercel for hosting the frontend. We utilise tools like Express.js, Node.js and deployed on render web services.",
+    text: "Pluginent is a user-friendly platform that connects users to live events while providing creators the right tools to host events and reach their targeted audience. I was assigned to lead the frontend team to build this web application frontend and some APIs, using programming language like Typescript, Next framework, and Vercel for hosting the frontend. We utilise tools like Express.js, Node.js and deployed on render web services.",
     deploy: "https://app.pluginent.com",
     stack: [
       "Next.ts",
@@ -99,8 +99,16 @@ const myDatas = [
       "Node.js",
       "MongoDB",
       "Vercel",
-      "Render"
+      "Render",
     ],
+  },
+  {
+    image: "/assets/yourworkbuddy.png",
+    slug: "yourworkbuddy",
+    header: "Your Work Buddy",
+    text: "Your Work Buddy redefines professional connections with our unique waving and texting model, helping teams connect and start projects faster. I collaborated with the frontend team to build this web application frontend, using programming language like Typescript, Next.js framework, and Vercel for hosting the frontend. The application features consist of a chat model where client and talent meet and carry out deals concerning a job or project, dashboard perculiar to client and talent and much more.",
+    deploy: "https://www.yourworkbuddy.com",
+    stack: ["Next.ts", "TailwindCSS", "Typescript", "Vercel", "Imagekit"],
   },
 ];
 
