@@ -1,11 +1,17 @@
-import { FC, PropsWithChildren, useContext, useMemo, useState } from "react";
+import {
+  FC,
+  PropsWithChildren,
+  useCallback,
+  useContext,
+  useMemo,
+  useState,
+} from "react";
 import { GlobalContext, GlobalContextType } from "@/contexts/global.context";
 import myDatas, { DataProps } from "@/data/porfolioDatas";
 
 export const GlobalProvider: FC<PropsWithChildren> = ({ children }) => {
   const [isDisplaying, setIsDisplaying] = useState<boolean>(false);
   const [showSlug, isShowSlug] = useState<DataProps>({
-    id: 0,
     image: "",
     slug: "",
     header: "",
@@ -15,16 +21,19 @@ export const GlobalProvider: FC<PropsWithChildren> = ({ children }) => {
     stack: [],
   });
 
-  const handleProjectsDisplay = (slug: string) => {
-    const getClicked = myDatas.find((data) => data.slug === slug);
+  const handleProjectsDisplay = useCallback(
+    (slug: string) => {
+      const getClicked = myDatas.find((data) => data.slug === slug);
 
-    if (!getClicked) {
-      return <div>Project not found</div>;
-    }
+      if (!getClicked) {
+        return <div>Project not found</div>;
+      }
 
-    setIsDisplaying(!isDisplaying);
-    isShowSlug(getClicked);
-  };
+      setIsDisplaying(!isDisplaying);
+      isShowSlug(getClicked);
+    },
+    [isDisplaying, isShowSlug]
+  );
 
   const handleGoBack = () => {
     setIsDisplaying(!isDisplaying);
