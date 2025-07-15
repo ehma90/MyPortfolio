@@ -73,7 +73,7 @@ const myDatas = [
     image: "/assets/noimpunity.png",
     slug: "noimpunity",
     header: "No Impunity",
-    text: "No Impunity unlock the potential of litigation funding to support victims of corporate human rights abuse and environmental damage in their fight for justice. In achieving this, I was assigned built this website/web app frontend, using trending programming language like Typescript, Next framework, Firebase for authentication, and Vercel for hosting the frontend. This project has expand and widen my understanding of Typescript.",
+    text: "No Impunity unlock the potential of litigation funding to support victims of corporate human rights abuse and environmental damage in their fight for justice. In achieving this, I was assigned to build this website/web app frontend, using trending programming language like Typescript, Next framework, Firebase for authentication, and Vercel for hosting the frontend. This project has expand and widen my understanding of Typescript.",
     deploy: "https://www.noimpunity.org/",
     stack: [
       "Next.ts",
@@ -83,6 +83,23 @@ const myDatas = [
       "Stripe",
       "Vercel",
       "Node",
+    ],
+  },
+  {
+    image: "/assets/pluginent.png",
+    slug: "pluginent",
+    header: "Plugin Entertainment",
+    text: "Pluginent is a user-friendly platform that connects users to live events while providing creators the right tools to host events and reach their targeted audience. I was assigned to build this web application frontend and APis, using programming language like Typescript, Next framework, and Vercel for hosting the frontend. We utilise tools like Express.js, Node.js and deployed on render web services.",
+    deploy: "https://app.pluginent.com",
+    stack: [
+      "Next.ts",
+      "TailwindCSS",
+      "Typescript",
+      "Express.js",
+      "Node.js",
+      "MongoDB",
+      "Vercel",
+      "Render"
     ],
   },
 ];
