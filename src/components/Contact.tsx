@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Container } from "@/reusable-components";
 import {
   FaEnvelope,
@@ -9,7 +9,8 @@ import {
   FaMapMarkerAlt,
   FaLinkedin,
   FaGithub,
-  FaTwitter,
+  FaCheckCircle,
+  FaTimes,
 } from "react-icons/fa";
 
 const Contact = () => {
@@ -21,6 +22,8 @@ const Contact = () => {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
+  const [error, setError] = useState("");
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -34,14 +37,30 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError("");
 
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      const response = await fetch("https://formspree.io/f/mpzbgqgr", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setShowSuccess(true);
+        setFormData({ name: "", email: "", subject: "", message: "" });
+        // Hide success message after 5 seconds
+        setTimeout(() => setShowSuccess(false), 5000);
+      } else {
+        throw new Error("Failed to send message");
+      }
+    } catch (err) {
+      setError("Failed to send message. Please try again.");
+    } finally {
       setIsSubmitting(false);
-      // Here you would typically send the form data to your backend
-      alert("Thank you for your message! I will get back to you soon.");
-      setFormData({ name: "", email: "", subject: "", message: "" });
-    }, 2000);
+    }
   };
 
   const contactInfo = [
@@ -54,8 +73,8 @@ const Contact = () => {
     {
       icon: FaPhone,
       title: "Phone",
-      value: "+234 XXX XXX XXXX",
-      link: "tel:+234XXXXXXXXX",
+      value: "+234 905 663 712",
+      link: "tel:+2349050663712",
     },
     {
       icon: FaMapMarkerAlt,
@@ -78,16 +97,35 @@ const Contact = () => {
       label: "GitHub",
       color: "hover:text-gray-400",
     },
-    {
-      icon: FaTwitter,
-      href: "#",
-      label: "Twitter",
-      color: "hover:text-blue-400",
-    },
   ];
 
   return (
     <Container className="px-4 sm:px-6 lg:px-8">
+      {/* Success Notification */}
+      <AnimatePresence>
+        {showSuccess && (
+          <motion.div
+            initial={{ opacity: 0, y: -50, scale: 0.9 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -50, scale: 0.9 }}
+            className="fixed top-10 right-10 transform -translate-x-1/2 z-50 bg-green-500 text-white px-6 py-4 rounded-xl shadow-lg flex items-start space-x-3 max-w-md mx-4"
+          >
+            <div className="flex-1">
+              <h4 className="font-semibold">Message Sent Successfully!</h4>
+              <p className="text-sm text-green-100">
+                Thank you for your message. I'll get back to you soon!
+              </p>
+            </div>
+            <button
+              onClick={() => setShowSuccess(false)}
+              className="text-green-100 hover:text-white transition-colors duration-200"
+            >
+              <FaTimes className="h-5 w-5" />
+            </button>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <motion.div
@@ -116,10 +154,21 @@ const Contact = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="bg-surface-light border border-border rounded-2xl p-8">
+            <div className="bg-surface-light border border-gray-700 rounded-2xl p-8">
               <h3 className="text-2xl font-bold text-text-primary mb-6">
                 Send me a message
               </h3>
+
+              {/* Error Message */}
+              {error && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="mb-6 p-4 bg-red-500/10 border border-red-500/20 rounded-lg text-red-400 text-sm"
+                >
+                  {error}
+                </motion.div>
+              )}
 
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid sm:grid-cols-2 gap-6">

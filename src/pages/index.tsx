@@ -19,15 +19,15 @@ export default function Home() {
         </section>
 
         <section id="about" className="py-20">
-          {/* <About /> */}
+          <About />
         </section>
 
         <section id="projects" className="py-20 bg-surface/30">
-          {/* <Projects /> */}
+          <Projects />
         </section>
 
         <section id="skills" className="py-20">
-          {/* <Skills /> */}
+          <Skills />
         </section>
 
         <section id="contact" className="py-20 bg-surface/30">

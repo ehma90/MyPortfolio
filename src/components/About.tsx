@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Container } from "@/reusable-components";
 import { FaCode, FaShieldAlt, FaRocket, FaUsers } from "react-icons/fa";
+import Image from "next/image";
 
 const About = () => {
   const features = [
@@ -40,7 +41,7 @@ const About = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.4 }}
           viewport={{ once: true }}
           className="text-center mb-16"
         >
@@ -55,7 +56,7 @@ const About = () => {
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
             viewport={{ once: true }}
             className="space-y-6"
           >
@@ -108,50 +109,68 @@ const About = () => {
           </motion.div>
 
           {/* Right Column - Features Grid */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="grid grid-cols-1 sm:grid-cols-2 gap-6"
-          >
-            {features.map((feature, index) => (
-              <motion.div
-                key={feature.title}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="group"
-              >
-                <div className="bg-surface-light border border-border rounded-xl p-4 h-full hover:border-primary/50 transition-all duration-300 transform hover:-translate-y-2">
-                  <div className="flex flex-col items-start space-x-4">
-                    <div className="flex-1 flex items-center gap-3">
-                      <div className="flex-shrink-0">
-                        <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
-                          <feature.icon className="h-6 w-6" />
+          <div>
+            <motion.div
+              whileHover={{ scale: 1.05, rotate: 2 }}
+              className="relative z-10"
+            >
+              <div className="relative w-40 h-40 mx-auto">
+                <Image
+                  src="/assets/emmanuel.jpg"
+                  alt="Emmanuel Essien"
+                  fill
+                  className="object-cover rounded-full border-4 border-primary/30 shadow-2xl"
+                  priority
+                />
+                {/* Glow effect */}
+                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 blur-xl animate-pulse"></div>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.4 }}
+              viewport={{ once: true }}
+              className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+            >
+              {features.map((feature, index) => (
+                <motion.div
+                  key={feature.title}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="group"
+                >
+                  <div className="bg-surface-light border border-border rounded-xl p-4 h-full hover:border-primary/50 transition-all duration-300 transform hover:-translate-y-2">
+                    <div className="flex flex-col items-start space-x-4">
+                      <div className="flex-1 flex items-center gap-3">
+                        <div className="flex-shrink-0">
+                          <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
+                            <feature.icon className="h-6 w-6" />
+                          </div>
                         </div>
-                      </div>
 
-                      <h4 className="text-lg font-semibold text-text-primary mb-2 group-hover:text-primary transition-colors duration-200">
-                        {feature.title}
-                      </h4>
+                        <h4 className="text-lg font-semibold text-text-primary mb-2 group-hover:text-primary transition-colors duration-200">
+                          {feature.title}
+                        </h4>
+                      </div>
+                      <p className="text-text-secondary text-sm leading-relaxed">
+                        {feature.description}
+                      </p>
                     </div>
-                    <p className="text-text-secondary text-sm leading-relaxed">
-                      {feature.description}
-                    </p>
                   </div>
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
+                </motion.div>
+              ))}
+            </motion.div>
+          </div>
         </div>
 
         {/* Experience Highlights */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+        transition={{ duration: 0.4, delay: 0.2 }}
           viewport={{ once: true }}
           className="mt-20"
         >

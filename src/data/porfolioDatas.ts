@@ -28,15 +28,6 @@ const myDatas = [
     stack: ["HTML5", "CSS3", "html/css", "Javascript", "bootstrap"],
   },
   {
-    image: "/assets/tic-tac-toe.png",
-    slug: "tic-tac-toe",
-    header: "TIC-TAC-TOE",
-    text: "Most people have engage in the battle of winning tic-tac-toe when playing with an opponent on a sheet of paper or other physical forms of display. I created this app to do the exact same thing.",
-    link: "https://github.com/ehma90/tic-tac-toe",
-    deploy: "https://ehma90.github.io/tic-tac-toe/",
-    stack: ["HTML5", "CSS3", "Javascript"],
-  },
-  {
     image: "/assets/pebble.png",
     slug: "pebble",
     header: "Pebble Landing Page",
@@ -52,14 +43,6 @@ const myDatas = [
     text: "An innovative and creative agency for modern day businesses. At Protis, we develop eye-catching brands, build digital products, and deliver campaigns that stand out from the norm.",
     deploy: "https://protishq.vercel.app/",
     stack: ["React.JS", "Nodejs", "TailwindCSS", "AOS animation"],
-  },
-  {
-    image: "/assets/bfwc.png",
-    slug: "bfwc",
-    header: "Buy Food With Crypto",
-    text: "BWFC is an idea my friends came up with, to create an online food service platform with blockchain used as payment. I quickly dive in to creating this website for it. Only desktop version available.",
-    deploy: "https://buy-food-with-crypto.vercel.app",
-    stack: ["React.JS", "TailwindCSS"],
   },
   {
     image: "/assets/4waymedia.png",
