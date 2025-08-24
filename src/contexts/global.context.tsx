@@ -5,7 +5,6 @@ export type GlobalContextType = {
     isDisplaying: boolean;
     handleProjectsDisplay: (slug:string) => void;
     showSlug: DataProps;
-    handleGoBack: () => void;
 };
 
 export const GlobalContext = createContext<GlobalContextType | null>(null);

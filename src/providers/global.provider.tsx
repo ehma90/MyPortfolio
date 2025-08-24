@@ -35,18 +35,14 @@ export const GlobalProvider: FC<PropsWithChildren> = ({ children }) => {
     [isDisplaying, isShowSlug]
   );
 
-  const handleGoBack = () => {
-    setIsDisplaying(!isDisplaying);
-  };
 
   const contextValue: GlobalContextType = useMemo(
     () => ({
       isDisplaying,
       showSlug,
       handleProjectsDisplay,
-      handleGoBack,
     }),
-    [showSlug, isDisplaying, handleProjectsDisplay, handleGoBack]
+    [showSlug, isDisplaying, handleProjectsDisplay]
   );
 
   return (

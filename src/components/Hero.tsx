@@ -133,7 +133,7 @@ const Hero = () => {
               transition={{ delay: 0.4, duration: 0.4 }}
               className="text-lg text-accent font-medium inline-block px-4 py-2 bg-accent/10 border border-accent/20 rounded-full"
             >
-              Hello, I'm
+              Hello, I&apos;m
             </motion.p>
 
             <motion.h1

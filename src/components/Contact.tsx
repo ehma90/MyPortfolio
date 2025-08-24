@@ -113,7 +113,7 @@ const Contact = () => {
             <div className="flex-1">
               <h4 className="font-semibold">Message Sent Successfully!</h4>
               <p className="text-sm text-green-100">
-                Thank you for your message. I'll get back to you soon!
+                Thank you for your message. I&apos;ll get back to you soon!
               </p>
             </div>
             <button
@@ -139,7 +139,7 @@ const Contact = () => {
             Get In <span className="gradient-text">Touch</span>
           </h2>
           <p className="text-lg text-text-secondary max-w-2xl mx-auto">
-            I'm always interested in new opportunities and exciting projects.
+            I&apos;m always interested in new opportunities and exciting projects.
             Whether you have a question or just want to say hi, feel free to
             reach out!
           </p>
@@ -283,7 +283,7 @@ const Contact = () => {
             {/* Contact Information */}
             <div>
               <h3 className="text-2xl font-bold text-text-primary mb-6">
-                Let's connect
+                Let&apos;s connect
               </h3>
 
               <div className="space-y-6">
@@ -359,8 +359,8 @@ const Contact = () => {
                 </span>
               </div>
               <p className="text-text-secondary text-sm">
-                I'm currently accepting new projects and job opportunities.
-                Let's discuss how we can work together!
+                I&apos;m currently accepting new projects and job opportunities.
+                Let&apos;s discuss how we can work together!
               </p>
             </motion.div>
           </motion.div>

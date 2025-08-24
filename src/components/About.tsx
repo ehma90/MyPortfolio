@@ -66,7 +66,7 @@ const About = () => {
 
             <div className="space-y-4 text-text-secondary leading-relaxed">
               <p>
-                Hello 👋🏽, I'm Emmanuel, a professional FullStack developer with
+                Hello 👋🏽, I&apos;m Emmanuel, a professional FullStack developer with
                 a passion for creating interactive, responsive, and
                 user-friendly web and mobile applications that resonate with
                 users globally.
@@ -75,7 +75,7 @@ const About = () => {
               <p>
                 My core strengths lie in frontend technologies, where I leverage
                 modern frameworks to create scalable, efficient, and
-                high-performing applications. I'm passionate about building
+                high-performing applications. I&apos;m passionate about building
                 complete solutions, from database architecture to seamless user
                 interfaces, ensuring a smooth and impactful experience.
               </p>

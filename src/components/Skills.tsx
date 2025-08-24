@@ -43,8 +43,8 @@ const Skills = () => {
             Technical <span className="gradient-text">Skills</span>
           </h2>
           <p className="text-lg text-text-secondary max-w-2xl mx-auto">
-            I've worked with a wide range of technologies and tools to build
-            robust, scalable applications. Here's a comprehensive overview of my
+            I&apos;ve worked with a wide range of technologies and tools to build
+            robust, scalable applications. Here&apos;s a comprehensive overview of my
             technical expertise.
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full mt-6"></div>
@@ -186,7 +186,7 @@ const Skills = () => {
               Always <span className="gradient-text">Learning</span>
             </h3>
             <p className="text-text-secondary mb-6 max-w-2xl mx-auto">
-              Technology evolves rapidly, and I'm committed to staying current
+              Technology evolves rapidly, and I&apos;m committed to staying current
               with the latest trends and best practices in software development
               and cybersecurity.
             </p>

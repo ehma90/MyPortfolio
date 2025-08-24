@@ -198,8 +198,8 @@ const Projects = () => {
               Have a project in mind?
             </h3>
             <p className="text-text-secondary mb-6 max-w-2xl mx-auto">
-              I'm always interested in new opportunities and exciting projects.
-              Let's discuss how we can work together to bring your ideas to
+              I&apos;m always interested in new opportunities and exciting projects.
+              Let&apos;s discuss how we can work together to bring your ideas to
               life.
             </p>
             <motion.a
@@ -208,7 +208,7 @@ const Projects = () => {
               whileTap={{ scale: 0.95 }}
               className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-lg shadow-lg hover:shadow-glow transition-all duration-300"
             >
-              Let's Talk
+              Let&apos;s Talk
             </motion.a>
           </div>
         </motion.div>
