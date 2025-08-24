@@ -16,7 +16,7 @@ const myDatas = [
     text: "A university website(Demo), that shows courses offered by this ideal university. Built using HTML, Css3, Javascript and PHP.",
     link: "https://github.com/ehma90/project-tutorial",
     deploy: "https://ehma90.github.io/project-tutorial/",
-    stack: ["HTML5", "CSS3", "Javascript", "PHP"],
+    stack: ["HTML5", "CSS3", "html/css", "Javascript", "PHP"],
   },
   {
     image: "/assets/tech-conference.png",
@@ -25,7 +25,7 @@ const myDatas = [
     text: "Customized website for a Tech Conference(Demo), created to complete our weekly milestone at Microverse. This webpage is built with HTML5, CSS3, and JavaScript",
     link: "https://github.com/ehma90/Tech-AI-Conference",
     deploy: "https://ehma90.github.io/Tech-AI-Conference",
-    stack: ["HTML5", "CSS3", "Javascript"],
+    stack: ["HTML5", "CSS3", "html/css", "Javascript", "bootstrap"],
   },
   {
     image: "/assets/tic-tac-toe.png",
@@ -51,7 +51,7 @@ const myDatas = [
     header: "Protis HQ",
     text: "An innovative and creative agency for modern day businesses. At Protis, we develop eye-catching brands, build digital products, and deliver campaigns that stand out from the norm.",
     deploy: "https://protishq.vercel.app/",
-    stack: ["React.JS", "TailwindCSS", "AOS animation"],
+    stack: ["React.JS", "Nodejs", "TailwindCSS", "AOS animation"],
   },
   {
     image: "/assets/bfwc.png",
@@ -76,13 +76,14 @@ const myDatas = [
     text: "No Impunity unlock the potential of litigation funding to support victims of corporate human rights abuse and environmental damage in their fight for justice. In achieving this, I was assigned to build this website/web app frontend, using trending programming language like Typescript, Next framework, Firebase for authentication, and Vercel for hosting the frontend. This project has expand and widen my understanding of Typescript.",
     deploy: "https://www.noimpunity.org/",
     stack: [
-      "Next.ts",
+      "Nextjs",
       "TailwindCSS",
       "Typescript",
+      "React Query",
       "Firebase",
       "Stripe",
       "Vercel",
-      "Node",
+      "Nodejs",
     ],
   },
   {
@@ -92,12 +93,14 @@ const myDatas = [
     text: "Pluginent is a user-friendly platform that connects users to live events while providing creators the right tools to host events and reach their targeted audience. I was assigned to lead the frontend team to build this web application frontend and some APIs, using programming language like Typescript, Next framework, and Vercel for hosting the frontend. We utilise tools like Express.js, Node.js and deployed on render web services.",
     deploy: "https://app.pluginent.com",
     stack: [
-      "Next.ts",
+      "Nextjs",
       "TailwindCSS",
       "Typescript",
+      "React Query",
       "Express.js",
       "Node.js",
       "MongoDB",
+      "Nodejs",
       "Vercel",
       "Render",
     ],
@@ -108,7 +111,7 @@ const myDatas = [
     header: "Your Work Buddy",
     text: "Your Work Buddy redefines professional connections with our unique waving and texting model, helping teams connect and start projects faster. I collaborated with the frontend team to build this web application frontend, using programming language like Typescript, Next.js framework, and Vercel for hosting the frontend. The application features consist of a chat model where client and talent meet and carry out deals concerning a job or project, dashboard perculiar to client and talent and much more.",
     deploy: "https://www.yourworkbuddy.com",
-    stack: ["Next.ts", "TailwindCSS", "Typescript", "Vercel", "Imagekit"],
+    stack: ["Nextjs", "TailwindCSS", "Typescript", "React Query", "Vercel", "Nodejs", "Expressjs", "Imagekit", "MongoDB"],
   },
 ];
 
